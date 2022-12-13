@@ -2,46 +2,48 @@ from environnement import Environnement
 from abc import ABC,abstractclassmethod, abstractmethod
 
 
+
 class Agent(ABC):
     """Abstract class for an agent"""
     def __init__(self, id: int) -> None:
         self.id = id
-        self.knowledgebase = dict()
 
     @abstractmethod
-    def See(self, environnement):
-        """This function has the hability of observing the environnement and return a Perception of it""" 
-        pass   
-
+    def agent_program(self):
+        """this function make the proces of the agent"""
+        pass
 
     @abstractmethod
-    def Next(self,perception, internal_state):
-        """This function change the state of the environnrment that the agent has from the environnement
-        based on the perception and the old state"""
+    def see(self,environnement):
         pass
 
-
-    @abstractmethod
-    def conduct_layer(self,social_knoledge):
-        """this layer has the responsability of the reactive behavior of the agent"""
-        pass
-     
-    @abstractmethod
-    def planing_layer(self,planing_knoledge):
-        """this layer has the responsability of the planing for achieve the agent goals"""
-        pass
-     
-    @abstractmethod 
-    def cooperative_layer(self,environnement_model):
-        """this layer has the responsability of social interactions"""
-        pass
-
-    
 
     @abstractmethod    
-    def Action(sefl,internal_state):
+    def action(sefl,perception):
         """This function represents the agent actions based in the perceptions of the environnement"""
         pass    
 
 
+class ReactiveAgent(Agent):
+    """this agent takes action based only on the percept"""
+    def __init__(self, id: int) -> None:
+        super().__init__(id)
 
+
+class PlanningAgent(Agent):
+    """"""
+    def __init__(self, id: int) -> None:
+        super().__init__(id)
+
+class SocialAgent(Agent):
+    def __init__(self, id: int) -> None:
+        super().__init__(id) 
+
+
+class TouringMachine(ReactiveAgent,PlanningAgent,SocialAgent):
+    def __init__(self, id: int) -> None:
+        super().__init__(id)                      
+
+class CivilizationAgent(Agent):
+    def __init__(self, id: int) -> None:
+        super().__init__(id)
