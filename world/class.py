@@ -149,7 +149,7 @@ def generacion_de_peces(mapa,prob):
             if mapa[i,j] ==-1 and random.random() > prob:
                mapa[i,j]=6
 
-def generation_world(size, fill, prob_city=0.99, prob_town=0.8, prob_mount=0.8, prod_fruit=0.8,prod_fish=0.5):
+def generation_world(size, fill, prob_city=0.99, prob_town=0.95, prob_mount=0.8, prod_fruit=0.8,prod_fish=0.5):
     mapa = generacion_de_mapa_aleatorio(size[0],size[1],fill)
     automata_celular_moore(mapa,1)
     generacion_de_playa(mapa)
