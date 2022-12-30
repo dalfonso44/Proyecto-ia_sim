@@ -8,10 +8,6 @@ class Agent(ABC):
     def __init__(self, id: int) -> None:
         self.id = id
 
-    @abstractmethod
-    def agent_program(self):
-        """this function make the proces of the agent"""
-        pass
 
     @abstractmethod
     def see(self,environnement):
@@ -22,6 +18,17 @@ class Agent(ABC):
     def action(sefl,perception):
         """This function represents the agent actions based in the perceptions of the environnement"""
         pass    
+
+
+class knowledgebase_agent(Agent):
+    def __init__(self, id: int, knowledgebase) -> None:
+        super().__init__(id)
+        self.id = id
+        self.knowledgebase = knowledgebase
+
+    def action(sefl, perception):
+        pass
+          
 
 
 class ReactiveAgent(Agent):
