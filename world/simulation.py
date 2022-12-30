@@ -8,7 +8,7 @@ jugador_actual = -1
 
 #habilidades=[Habilidad('pesca',5), Habilidad('nautica',5), Habilidad('navegacion',5), 
 #             Habilidad('escalada',5), Habilidad('mineria',5), Habilidad('herreria',5),
-#             Habilidad('organizacion',5), Habilidad('agricultura',5), Habilidad('milicias',5)]
+#             Habilidad(pass'organizacion',5), Habilidad('agricultura',5), Habilidad('milicias',5)]
 
 def definir_jugador(jugadores):
     jugador_actual = (jugador_actual + 1)%len(jugadores)

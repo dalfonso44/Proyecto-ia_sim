@@ -85,6 +85,11 @@ class map:
                     s+='L '
             s+='\n'
         return s
+    def avaiable_moves(self):
+        pass   
+
+    def civilization_submap(sefl,id):
+        pass
 
     def generation_world(self, size, fill, prob_city, prob_town, prob_mount, prod_fruit,prod_fish):
         mapa = generacion_de_mapa_aleatorio(size[0],size[1],fill)
