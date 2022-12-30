@@ -2,8 +2,7 @@ from clases import Habilidad, Jugador, map
 import random
 
 
-mapa = map()
-jugadores = [Jugador('1'),Jugador('2'),Jugador('3')]
+mapa = map(16,16,0.55,0.89,0.79,0.85,0.84,0.45)
 jugador_actual = -1
 
 #habilidades=[Habilidad('pesca',5), Habilidad('nautica',5), Habilidad('navegacion',5), 
@@ -11,7 +10,7 @@ jugador_actual = -1
 #             Habilidad('organizacion',5), Habilidad('agricultura',5), Habilidad('milicias',5)]
 
 def definir_jugador(jugadores):
-    jugador_actual = (jugador_actual + 1)%len(jugadores)
+    return (jugador_actual + 1)%len(jugadores)
 
 def crear_jugadores():
     pass
@@ -78,9 +77,8 @@ def juega(jugador_actual):
 
 jugadores = crear_jugadores()
 for i in range(30):
-    definir_jugador(jugador_actual)
-    jugadores = crear_jugadores()
-    juega(jugador_actual)
+    jugador_actual = definir_jugador(jugadores)
+    juega(jugadores[jugador_actual])
 
     
         
