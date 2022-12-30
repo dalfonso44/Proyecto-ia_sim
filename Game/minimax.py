@@ -1,4 +1,5 @@
-import math 
+import math
+from unittest import result 
 infinity = math.inf
 
 class Game:
@@ -23,20 +24,20 @@ class Game:
     def utility(self, state, player):
         """Return the value of this final state to player."""
         raise NotImplementedError
-        
 
-def play_game(game, strategies: dict, verbose=False):
-    """Play a turn-taking game. `strategies` is a {player_name: function} dict,
-    where function(state, game) is used to get the player's move."""
-    state = game.initial
-    while not game.is_terminal(state):
-        player = state.to_move
-        move = strategies[player](game, state)
-        state = game.result(state, move)
-        if verbose: 
-            print('Player', player, 'move:', move)
-            print(state)
-    return state
+    def play_game(self,players):
+        current_state = self.initial
+        while not self.is_terminal(current_state):
+            for player in players:
+                move = player.play()
+                current_state = result(current_state,move)
+                winner, utility = player, self.utility(current_state,player)
+                if self.is_terminal(current_state):
+                    break
+        print(current_state)
+        return winner, utility        
+
+
 
 
 
