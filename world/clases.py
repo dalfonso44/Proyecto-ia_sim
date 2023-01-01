@@ -1,15 +1,21 @@
 import numpy as np
 from world_ import *
-
+from CSP.cps import CSP
+from CSP.cps import UniversalDict
+import random
 
 
 class environment_things():
-    def __init__(self):
-        self.soldado = None       
+    def __init__(self,cord_x = None,cord_y = None):
+        self.soldado = None  
+        self.name = "thing"
+        self.x = cord_x
+        self.y = cord_y     
 
 class beach(environment_things):
     def __init__(self):
         super().__init__()
+        self.name = "beach"
     
 class ocean(environment_things):
     def __init__(self) -> None:
@@ -18,50 +24,109 @@ class ocean(environment_things):
 class mountain(environment_things):
     def __init__(self):
         super().__init__()
+        self.name = "mountain"
 
 class plain(environment_things):
     def __init__(self):
         super().__init__()
+        self.name = "plain"
 
 class port(beach):
     def __init__(self):
         super().__init__()
+        self.name = "port"
 
 class fish(beach):
     def __init__(self):
         super().__init__()
+        self.name = "fish"
 
 class mine(mountain):
     def __init__(self):
         super().__init__()
+        self.name = "mine"
 
 class fruits(plain):
     def __init__(self):
         super().__init__()
+        self.name = "fruits"
 
 class farm(plain):
     def __init__(self):
         super().__init__()
+        self.name = "farm"
 
 class planting(plain):
     def __init__(self):
         super().__init__()
+        self.name = "planting"
 
 class town(environment_things):
     def __init__(self):
         super().__init__()
+        self.name = "town"
 
 class city(plain):
     def __init__(self):
         super().__init__()
+        self.name = "city"
         self.poblacion=0
         self.nivel=0
 
+def different_values_constraint(A,a,B,b):
+    """ A constraint saying two neighboring variables must differ in value"""
+    return a!= b        
+
 class map:
-    def __init__(self, size_x, size_y,fill,prob_city, prob_town, prob_mount, prod_fruit,prod_fish):
-        self.size_x=size_x
-        self.size_y=size_y
-        self.map = self.generation_world((size_x,size_y),fill,prob_city, prob_town, prob_mount, prod_fruit,prod_fish)
+    def __init__(self,players,fill,prob_city, prob_town, prob_mount, prod_fruit,prod_fish):
+        self.size_x= self.size_y = len(players) * 3
+        self.players = players
+        self.map = np.ndarray((self.size_x,self.size_y),dtype=environment_things)
+        variables = []
+        # for i in range(self.map.shape[0]):
+        #     for j in range(self.map[1]):
+        #         cell = self.map[i,j]
+        #         cell.x = i
+        #         cell.y = j
+        #         variables.append (cell)
+
+        neighbors = parse_neighbors(self.map)        
+        domain = [town(),city(), beach(), ocean(),mountain(),plain(),port(),fish(),mine(),farm(),fruits()]
+        domains = UniversalDict(domain)
+
+        def parse_neighbors(map):
+            neighbors = dict()
+            for i in range(map.shape[0]):
+                for j in range(map.shape[1]):
+                    neighbors[map[i,j]] = calculate_adyacents(map,i,j)
+
+
+            def calculate_adyacents(map,x,y):
+                dx = np.array([-1,1,0,0,-1,1,-1,1]) #up down left right diag izq diag der
+                dy = np.array([0,0,-1,1,-1,-1,1,1])  
+                adyacents = []      
+
+                for i in range(len(dx)):
+                    new_x = x + dx[i]
+                    new_y = y + dy[i]
+                    if (new_x >= 0 and new_y >= 0 and new_x < map.shape[0] and new_y < map.shape[1]):
+                        adyacents.append(map[new_x,new_y])
+
+                return adyacents     
+
+            return neighbors           
+
+            
+
+
+
+        def gereration_world_csp(self,domains,neighbors= None,constraints = None):
+            return CSP(list(neighbors.keys()), domains,neighbors, different_values_constraint)
+
+
+        map_csp = self.generation_world_csp(neighbors,domains, different_values_constraint)
+
+        #self.map = self.generation_world((size_x,size_y),fill,prob_city, prob_town, prob_mount, prod_fruit,prod_fish)
     
     def __str__(self):
         s=''
@@ -118,6 +183,9 @@ class map:
                 elif mapa[i,j]==6:
                     world[i,j]=fish()
         return world
+
+   
+
 
 class Habilidad:
     def __init__(self, nombre, precio):
