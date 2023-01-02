@@ -63,7 +63,7 @@ def generacion_de_ciudades_capitales(mapa, prob, cant_ciudades=3):
                         mapa[i,j]=2
                         posiciones.append((i,j))
 #                        comprobacion_relleno(mapa,i,j,True, 2)
-    print(posiciones)
+#    print(posiciones)
     return posiciones
 
 def generacion_de_poblados(mapa, prob,posiciones):
@@ -77,7 +77,7 @@ def generacion_de_poblados(mapa, prob,posiciones):
                     cant_pueblos-=1
                     posiciones.append((i,j))
     #                comprobacion_relleno(mapa,i,j,True, 3)
-    print("poblado",posiciones)
+#    print("poblado",posiciones)
 
     
 def generacion_de_montannas(mapa, prob):
