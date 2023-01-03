@@ -2,6 +2,7 @@ from mimetypes import init
 from world.clases import *
 from Players.Player import *
 import pandas as pd
+import csv
 
 class Action():
     def __init__(self, action):
@@ -40,7 +41,7 @@ class Civilization():
         return self.game_over
 
     def state(self,turn):
-        print(turn)
+        #print(turn)
         table = pd.DataFrame(columns=['money','capital','hab_pesca','hab_esc','hab_org','pob','score'], index=['vikings','romans','chineese'])
         for i in self.players:
             table['pob'][i.civilization]=0
@@ -56,19 +57,23 @@ class Civilization():
         for i in self.ciudades:
             table['pob'][i.civilization]+=i.poblacion
             table['capital'][i.civilization].append((i.row,i.col))
-        print(table)
-        print(self.map)
-    
+        #print(table)
+        #print(self.map)
+        #return table
+
     def play_game(self):
-        print('HISTORIA REAL')
-        self.state(self.turn)
+        #print('HISTORIA REAL')
+        with open('resultados/mi_fichero', 'a') as f:
+            f.write(self.map.__str__()+'\n')
+        #self.state(self.turn)
         i=self.turn
         while self.turn<self.turns:
             self.players[self.actual_player].play(self)
             if i!=self.turn:
                 i=self.turn
-                print('HISTORIA REAL')
-                self.state(self.turn)
+       #         print('HISTORIA REAL')
+        #self.state(self.turn).to_csv('mi_fichero', sep=" ")
+       
 
     def play_action(self):
         self.players[self.actual_player].play(self)

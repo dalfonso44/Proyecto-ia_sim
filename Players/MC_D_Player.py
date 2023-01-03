@@ -3,13 +3,13 @@ import random
 from Players.Player import *
 
 class MC_D_Player(Jugador):
-    def __init__(self, civilization):
+    def __init__(self, civilization, T=1.0, G=1.0, B=100, D=2):
         super().__init__(civilization)
-        self.T=1.0
-        self.G=1.0
+        self.T=T
+        self.G=G
         
-        self.B=100
-        self.D=2
+        self.B=B
+        self.D=D
     
     def play_complex(self,action,mundo,d,P=0):
         if d==0:

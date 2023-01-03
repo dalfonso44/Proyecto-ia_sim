@@ -3,10 +3,10 @@ from Players.Player import *
 import math
 
 class MC_Player(Jugador):
-    def __init__(self, civilization):
+    def __init__(self, civilization, T=1.0, G=3.0):
         super().__init__(civilization)
-        self.T=1.0
-        self.G=3.0
+        self.T=T
+        self.G=G
     
     def play(self,mundo):
         actions=mundo.actions()
