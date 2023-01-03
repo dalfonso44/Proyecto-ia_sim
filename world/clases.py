@@ -95,6 +95,8 @@ class map:
                     s +='T'
                 elif isinstance(self.map[i,j],fish):
                     s +='P'
+                elif isinstance(self.map[i,j],farm):
+                    s +='G'
                 elif isinstance(self.map[i,j],planting):
                     s+='Y'
                 elif isinstance(self.map[i,j], port):

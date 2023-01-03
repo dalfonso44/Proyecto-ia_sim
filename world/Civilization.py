@@ -16,6 +16,7 @@ class Civilization():
         self.game_over = False
         self.players = players
         self.turn = 0
+        self.turns = 30
         self.actual_player=0
         self.precios_guerreros={'Guerrero':2,'Espadachin':3,'Defensor':3}
         self.precios_construir={'planting':2,'beach':2,'mine':5,'farm':5,'port':10}
@@ -24,7 +25,6 @@ class Civilization():
         self.intereses=3
         self.add_cities()
         self.deads=[]
-
 
     def actions(self):
         current_player = self.players[self.actual_player]
@@ -60,34 +60,20 @@ class Civilization():
         print(table)
         print(self.map)
     
-    def play_game(self,turns):
-        self.state(0)
-        for i in range(turns):
-            for j in range(len(self.players)):
-                self.actual_player = j
-                while(True):
-                    l=self.players[j].play(self.actions(),self)
-                    if l=='termina(0)':
-                        break
-                    eval("self."+l[:-1]+",True)")
-#                print(self.players[j].civilization,[s.name for s in self.players[j].soldados])
-            for c in self.ciudades:
-                for j in self.players:
-                    if c.civilization == j.civilization:
-                        j.presupuesto += c.poblacion//self.intereses
-            for j in self.players:
-                for s in j.soldados:
-                    s.energy=True
-            
-            self.state(i+1)
-            if i%3==2:
-                for j in self.players:
-                    for hab in j.habilidades:
-                        for h in hab:
-                            h.precio+=1
+    def play_game(self):
+        print('HISTORIA REAL')
+        self.state(self.turn)
+        i=self.turn
+        while self.turn<self.turns:
+            self.players[self.actual_player].play(self)
+            if i!=self.turn:
+                i=self.turn
+                print('HISTORIA REAL')
+                self.state(self.turn)
 
-                
-
+    def play_action(self):
+        self.players[self.actual_player].play(self)
+    
     def add_cities(self):
         civ = ['vikings','romans','chineese']
         for i in range(self.map.map.shape[0]):
@@ -266,8 +252,6 @@ class Civilization():
             current_player.puntuacion+=puntuacion
         return puntuacion
 
-        
-
     def desarrollar_habilidades(self, i,j,ejecuta=False,revierte=False):
         if ejecuta:
             current_player = self.players[self.actual_player]
@@ -307,6 +291,23 @@ class Civilization():
         return c.poblacion*20* (1-2*revierte)
     
     def termina(self,_,ejecuta=False, revierte = False):
+        if ejecuta:
+            self.actual_player=self.actual_player+1
+            for s in self.players[self.actual_player%3].soldados:
+                s.energy=True
+            if self.actual_player%3 !=self.actual_player:
+                self.actual_player=self.actual_player%3
+                for c in self.ciudades:
+                    for j in self.players:
+                        if c.civilization == j.civilization:
+                            j.presupuesto += c.poblacion//self.intereses
+                self.turn+=1
+                #self.state(self.turn)
+                if self.turn%3==0:
+                    for j in self.players:
+                        for hab in j.habilidades:
+                            for h in hab:
+                                h.precio+=1
         return 0
 
 def accesible(position, new_position, habilidades):
@@ -323,7 +324,7 @@ def accesible(position, new_position, habilidades):
 
             
 
-a = Civilization([MC_D_Player('vikings'),MC_Player('romans'),RandomPlayer('chineese')])
-a.play_game(100)         
+a = Civilization([MCTSPlayer('vikings'),MC_Player('romans'),RandomPlayer('chineese')])
+a.play_game()         
 
             
