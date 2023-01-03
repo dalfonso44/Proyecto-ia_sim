@@ -1,7 +1,9 @@
+
 import numpy as np
 from world_ import *
-from CSP.cps import CSP
-from CSP.cps import UniversalDict
+from cps import CSP, backtracking_search
+from cps import UniversalDict
+from cps import AC3
 import random
 
 
@@ -11,6 +13,13 @@ class environment_things():
         self.name = "thing"
         self.x = cord_x
         self.y = cord_y     
+        self.zone = None
+    def __str__(self) -> str:
+        return self.name    
+
+class dessert(environment_things):
+    def __init__(self, cord_x=None, cord_y=None):
+        super().__init__(cord_x, cord_y)
 
 class beach(environment_things):
     def __init__(self):
@@ -67,40 +76,77 @@ class town(environment_things):
         self.name = "town"
 
 class city(plain):
-    def __init__(self):
+    def __init__(self, civilization):
         super().__init__()
         self.name = "city"
         self.poblacion=0
         self.nivel=0
+        self.zone = civilization
 
 def different_values_constraint(A,a,B,b):
     """ A constraint saying two neighboring variables must differ in value"""
     return a!= b        
 
+def in_zone_constraint():
+    """"""   
+    pass
+
+
+
+    
+
+def myMapConstraint(A,a,B,b):
+    r = random.randint(0,1)
+    if r == 0:return different_values_constraint(A,a,B,b) 
+    return not different_values_constraint(A,a,B,b)  
+
+class CivilizationDict():
+    def __init__(self) -> None:
+        self.value = None
+        self.domain0 = [ocean(),mountain()]
+        self.domain1 = [town(), beach(), ocean(),mountain(),plain(),port(),fish(),mine(),farm(),fruits()]
+        self.domain2 = [dessert(), mountain(),mine()]
+        self.domain3 = [beach(), ocean(), port(), fish(), farm()]
+
+    def __getitem__(self,key):
+        zone = key.zone
+        if zone is None:
+            self.value = self.domain0
+            return self.domain0 
+        elif zone == 'indian':
+            self.value = self.domain1
+            return self.domain1
+        elif zone == 'dessert':
+            self.value = self.domain2
+            return self.domain2    
+        elif zone == 'viking':
+            self.value = self.domain3
+            return self.domain3
+               
+
+    def __repr__(self) -> str: return '{{Any: {0!r}}}'.format(self.value)             
+
+
+
 class map:
-    def __init__(self,players,fill,prob_city, prob_town, prob_mount, prod_fruit,prod_fish):
-        self.size_x= self.size_y = len(players) * 3
+    def __init__(self,players,fill = None,prob_city = None, prob_town = None, prob_mount = None, prod_fruit = None,prod_fish = None):
+        self.size_x= self.size_y = len(players) * 2
         self.players = players
+        self.nei = dict()
         self.map = np.ndarray((self.size_x,self.size_y),dtype=environment_things)
-        variables = []
-        # for i in range(self.map.shape[0]):
-        #     for j in range(self.map[1]):
-        #         cell = self.map[i,j]
-        #         cell.x = i
-        #         cell.y = j
-        #         variables.append (cell)
+        for i in range(self.map.shape[0]):
+            for j in range(self.map.shape[1]):
+                self.map[i,j] = environment_things(i,j)
+        
+        self.neighbors = self.parse_neighbors(self.map)   
+        domain = [town(), beach(), ocean(),mountain(),plain(),port(),fish(),mine(),farm(),fruits()]
+        self.domains = UniversalDict(domain)
+        self.domains2 = CivilizationDict()
 
-        neighbors = parse_neighbors(self.map)        
-        domain = [town(),city(), beach(), ocean(),mountain(),plain(),port(),fish(),mine(),farm(),fruits()]
-        domains = UniversalDict(domain)
-
-        def parse_neighbors(map):
-            neighbors = dict()
-            for i in range(map.shape[0]):
-                for j in range(map.shape[1]):
-                    neighbors[map[i,j]] = calculate_adyacents(map,i,j)
+        self.world = self.generation_world_csp()
 
 
+    def parse_neighbors(self,map):
             def calculate_adyacents(map,x,y):
                 dx = np.array([-1,1,0,0,-1,1,-1,1]) #up down left right diag izq diag der
                 dy = np.array([0,0,-1,1,-1,-1,1,1])  
@@ -112,49 +158,81 @@ class map:
                     if (new_x >= 0 and new_y >= 0 and new_x < map.shape[0] and new_y < map.shape[1]):
                         adyacents.append(map[new_x,new_y])
 
-                return adyacents     
-
-            return neighbors           
-
-            
-
-
-
-        def gereration_world_csp(self,domains,neighbors= None,constraints = None):
-            return CSP(list(neighbors.keys()), domains,neighbors, different_values_constraint)
-
-
-        map_csp = self.generation_world_csp(neighbors,domains, different_values_constraint)
-
-        #self.map = self.generation_world((size_x,size_y),fill,prob_city, prob_town, prob_mount, prod_fruit,prod_fish)
+                return adyacents    
+            neighbors = dict()
+            for i in range(map.shape[0]):
+                for j in range(map.shape[1]):
+                    neighbors[map[i,j]] = calculate_adyacents(map,i,j)
+            return neighbors        
+    
     
     def __str__(self):
         s=''
-        for i in range(self.size_x):
-            for j in range(self.size_y):
-                if isinstance(self.map[i,j],ocean):
+        for i in range(self.world.shape[0]):
+            for j in range(self.world.shape[1]):
+                if isinstance(self.world[i,j],ocean):
                     s +='O '
-                elif isinstance(self.map[i,j],mountain):
+                elif isinstance(self.world[i,j],mountain):
                     s +='M '
-                elif isinstance(self.map[i,j],fruits):
+                elif isinstance(self.world[i,j],fruits):
                     s +='F '
-                elif isinstance(self.map[i,j],beach):
+                elif isinstance(self.world[i,j],beach):
                     s +='B '
-                elif isinstance(self.map[i,j],city):
+                elif isinstance(self.world[i,j],city):
                     s +='X '
-                elif isinstance(self.map[i,j],town):
+                elif isinstance(self.world[i,j],town):
                     s +='T '
-                elif isinstance(self.map[i,j],fish):
+                elif isinstance(self.world[i,j],fish):
                     s +='P '
                 else:
                     s+='L '
             s+='\n'
         return s
-    def avaiable_moves(self):
-        pass   
 
-    def civilization_submap(sefl,id):
-        pass
+    def make_zones(self,world,players):
+        def propagate_zone(x,y,world,civ):
+            dr = [-1,-1,-1,0,0,1,1,1]
+            dc = [-1,0,1,-1,1,-1,0,1]
+            for i in range(len(dr)):
+                new_x = x + dr[i]
+                new_y = y + dc[i]
+                if new_x > 0 and new_y > 0 and new_x < world.shape[0] and new_y < world.shape[1]:
+                    world[new_x,new_y].zone = civ
+            return world        
+            
+        cities_loc = []
+        x = -1
+        y = -1
+        for player in players:
+            civ = player.civilization
+            c = city(civ)
+            #c.zone = civ
+            
+            while (len(cities_loc) > 0 and (x,y) not in cities_loc):
+                x = random.randint(0,world.shape[0] -1)
+                y = random.randint(0,world.shape[1] - 1)
+            world [x,y] = c
+            world = propagate_zone(x,y,world,civ)
+            cities_loc.append((x,y))
+        return world    
+
+
+
+    def generation_world_csp(self):
+        world = np.full((self.size_x,self.size_y),environment_things(), dtype = environment_things)
+        neighbors = self.parse_neighbors(world)
+        world = self.make_zones(world,self.players) # reparte las ciudades de las civilizaciones
+        
+        d = CivilizationDict()
+        map_csp = CSP(list(self.neighbors.keys()), self.domains,self.neighbors, myMapConstraint)  
+        assignments = backtracking_search(map_csp)
+        for cell in assignments.keys():
+            x = cell.x
+            y = cell.y
+            world[x,y] = assignments[cell]
+
+        return world    
+
 
     def generation_world(self, size, fill, prob_city, prob_town, prob_mount, prod_fruit,prod_fish):
         mapa = generacion_de_mapa_aleatorio(size[0],size[1],fill)
@@ -230,11 +308,13 @@ class Defensor(Soldado):
         self.contraataque = 8
 
 class Jugador:
-    def __init__(self, name):
+    def __init__(self, name, civilization):
         self.soldados = []
         self.presupuesto = 3
         self.habilidades_desarrolladas=[]
         self.ciudades=[]
+        self.civilization = civilization
+
 
 
     def tropas(self):
