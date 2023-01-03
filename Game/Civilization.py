@@ -1,7 +1,6 @@
 from mimetypes import init
-#from Game.minimax import *
-from clases import *
-from players import *
+from world.clases import *
+from Players.Player import *
 import pandas as pd
 
 class Action():
@@ -322,9 +321,6 @@ def accesible(position, new_position, habilidades):
     return True
 
 
-            
-
-a = Civilization([MCTSPlayer('vikings'),MC_Player('romans'),RandomPlayer('chineese')])
-a.play_game()         
+                
 
             
