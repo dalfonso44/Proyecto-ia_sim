@@ -1,4 +1,4 @@
-from clases import Habilidad, Jugador, map
+from world.clases2 import Habilidad, Jugador, map
 import random
 
 

@@ -1,11 +1,11 @@
-from clases import map
-from clases import myMapConstraint
-from cps import CSP
-from cps import AC3
-from cps import backtracking_search
+from world.clases2 import map
+from world.clases2 import myMapConstraint
+from world.csp import CSP
+from world.csp import AC3
+from world.csp import backtracking_search
 
 import numpy as np
-from clases import Jugador
+from world.clases2 import Jugador
 
 a = Jugador("pepe","viking")
 b = Jugador("juan","indian")

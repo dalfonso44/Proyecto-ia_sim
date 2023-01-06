@@ -14,6 +14,8 @@ class environment_things():
         self.x = cord_x
         self.y = cord_y     
         self.zone = None
+        self.poblacion = 1
+        self.costo =2
     def __str__(self) -> str:
         return self.name    
 
@@ -44,16 +46,21 @@ class port(beach):
     def __init__(self):
         super().__init__()
         self.name = "port"
+        self.poblacion = 2
+        self.costo = 10
 
 class fish(beach):
     def __init__(self):
         super().__init__()
         self.name = "fish"
+        self.poblacion = 1
 
 class mine(mountain):
     def __init__(self):
         super().__init__()
         self.name = "mine"
+        self.poblacion = 2
+        self.costo = 5
 
 class fruits(plain):
     def __init__(self):
@@ -64,11 +71,15 @@ class farm(plain):
     def __init__(self):
         super().__init__()
         self.name = "farm"
+        self.poblacion = 2
+        self.costo = 5
 
 class planting(plain):
     def __init__(self):
         super().__init__()
         self.name = "planting"
+        self.poblacion = 1
+        self.costo = 2
 
 class town(environment_things):
     def __init__(self):
@@ -76,12 +87,15 @@ class town(environment_things):
         self.name = "town"
 
 class city(plain):
-    def __init__(self, civilization):
+    def __init__(self, civilization,row = None,col = None,poblacion=0):
         super().__init__()
         self.name = "city"
-        self.poblacion=0
+        self.poblacion= poblacion
         self.nivel=0
         self.zone = civilization
+        self.row = row 
+        self.col = col
+        self.history = [civilization]
 
 def different_values_constraint(A,a,B,b):
     """ A constraint saying two neighboring variables must differ in value"""
@@ -91,6 +105,13 @@ def in_zone_constraint():
     """"""   
     pass
 
+def all_diff_constraint(*values):
+    """Returns True if all values are different, False otherwise"""
+    return len(values) is len(set(values))
+
+def valid_world_constraint(*values):
+    """Returns true if the is a valid world"""   
+    pass 
 
 
     

@@ -1,6 +1,6 @@
 from mimetypes import init
-from Game.minimax import Game
-from clases import map
+from Game.utils import Game
+from world.clases2 import map
 
 
 class Action():
