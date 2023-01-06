@@ -16,6 +16,8 @@ class Node():
         
     def find_children(self):
         "All possible successors of this board state"
+        if self.is_terminal():
+            return []
         children=[]
         for a in self.actions:
             c=copy.deepcopy(self.state)
@@ -25,10 +27,19 @@ class Node():
 
     def find_random_child(self):
         "Random successor of this board state (for more efficient simulation)"
+        if self.is_terminal():
+            return None
         c=copy.deepcopy(self.state)
         a=random.choice(self.actions)
         eval('c.'+a[:-1]+",True)")
         return Node(c,self.me,self.H,a)
+
+    def find_random_child_new(self):
+        "Random successor of this board state (for more efficient simulation)"
+        a=random.choice(self.actions)
+        eval('self.state.'+a[:-1]+",True)")
+        self.action=a
+        self.actions=self.state.actions()
 
     def is_terminal(self):
         "Returns True if the node has no children"

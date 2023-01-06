@@ -12,7 +12,7 @@ class Action():
 class Civilization():
     #players es una lista de jugadores
     def __init__(self, players) -> None:
-        self.map = map(20,20,0.55,0.9,0.98,0.95,0.89,0.87)# cambiar estos numeros
+        self.map = map(10,10,0.55,0.9,0.98,0.95,0.89,0.87)# cambiar estos numeros
         self.game_over = False
         self.players = players
         self.turn = 0
@@ -29,7 +29,6 @@ class Civilization():
     def actions(self):
         current_player = self.players[self.actual_player]
         return self.avaiable_moves(current_player) # debe ser posible a partir del id del jugador sacar el submapa correspondiente y encontrar las acciones correspondientes
-
 
     def result(self, state, move):
         pass
@@ -59,21 +58,29 @@ class Civilization():
             table['capital'][i.civilization].append((i.row,i.col))
         #print(table)
         #print(self.map)
-        #return table
+        return table
 
-    def play_game(self):
+    def play_game(self,ID):
         #print('HISTORIA REAL')
-        with open('resultados/mi_fichero', 'a') as f:
+        with open('resultados/mapa/'+ID, 'w') as f:
+            f.write(str(self.turn)+'\n')
+            f.write(self.state(self.turn).to_string()+'\n')
             f.write(self.map.__str__()+'\n')
-        #self.state(self.turn)
         i=self.turn
         while self.turn<self.turns:
             self.players[self.actual_player].play(self)
             if i!=self.turn:
                 i=self.turn
+                with open('resultados/mapa/'+ID, 'a') as f:
+                    f.write(str(self.turn)+'\n')
+                    f.write(self.state(self.turn).to_string()+'\n')
+                    f.write(self.map.__str__()+'\n')
        #         print('HISTORIA REAL')
         #self.state(self.turn).to_csv('mi_fichero', sep=" ")
        
+        with open('resultados/mapa/'+ID, 'a') as f:
+            f.write(self.state(self.turn).to_string()+'\n')
+            f.write(self.map.__str__()+'\n')
 
     def play_action(self):
         self.players[self.actual_player].play(self)
