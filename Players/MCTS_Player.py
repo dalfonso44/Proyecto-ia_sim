@@ -4,19 +4,23 @@ from Players.Node import *
 
 
 class MCTSPlayer(Jugador):
-    def __init__(self, civilization,B=50,H=2):
+    def __init__(self, civilization,B=100,H=5):
         super().__init__(civilization)
         self.B=B
         self.H=H
 
     def play(self,mundo):
-        if len(mundo.actions())==1:
-            mundo.termina(0,True)
-            return
+        acciones=[]
         tree = MCTS()
         board = Node(mundo,self.civilization,min(self.H+mundo.turn,mundo.turns))
-        for _ in range(self.B):
-            tree.do_rollout(board)
-        l=tree.choose(board).action
-        print(l)
-        eval("mundo."+l[:-1]+",True)")
+        while True:
+            if len(board.actions)==1:
+                acciones.append("termina(0)")
+            if len(acciones)>1 and acciones[-1]=="termina(0)":
+                for l in acciones:
+                    eval("mundo."+l[:-1]+",True)")
+                return
+            for _ in range(self.B):
+                tree.do_rollout(board)
+            board=tree.choose(board)
+            acciones.append(board.action)

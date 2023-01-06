@@ -53,26 +53,52 @@ class MCTS:
             return  # already expanded
         self.children[node] = node.find_children()
 
-    def _simulate(self, node):
+    def _simulate_old(self, node):
         "Returns the reward for a random simulation (to completion) of `node`"
+        invert_reward = True
         while True:
             if node.is_terminal():
                 reward = node.reward()
-                return reward
+                return 1 - reward if invert_reward else reward
             node = node.find_random_child()
+            invert_reward = not invert_reward
+
+    def _simulate_OLD(self, node):
+        "Returns the reward for a random simulation (to completion) of `node`"
+        while True:
+            if node.is_terminal():
+                return node.reward()
+            node = node.find_random_child()
+            
+    def _simulate(self, node):
+        "Returns the reward for a random simulation (to completion) of `node`"
+        if node.is_terminal():
+            return node.reward()
+        node = node.find_random_child()
+        while True:
+            if node.is_terminal():
+                return node.reward()
+            node.find_random_child_new()
 
     def _backpropagate(self, path, reward):
         "Send the reward back up to the ancestors of the leaf"
         for node in reversed(path):
             self.N[node] += 1
             self.Q[node] += reward
-            
+    
+    def _backpropagate_old(self, path, reward):
+        "Send the reward back up to the ancestors of the leaf"
+        for node in reversed(path):
+            self.N[node] += 1
+            self.Q[node] += reward
+            reward = 1 - reward  # 1 for me is 0 for my enemy, and vice versa
+
     def _uct_select(self, node):
         "Select a child of node, balancing exploration & exploitation"
 
         # All children of node should already be expanded:
         assert all(n in self.children for n in self.children[node])
-
+        
         log_N_vertex = math.log(self.N[node])
 
         def uct(n):
@@ -80,4 +106,5 @@ class MCTS:
             return self.Q[n] / self.N[n] + self.exploration_weight * math.sqrt(
                 log_N_vertex / self.N[n]
             )
+
         return max(self.children[node], key=uct)
