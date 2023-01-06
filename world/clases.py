@@ -4,8 +4,10 @@ from world.world_ import *
 
 
 class environment_things():
-    def __init__(self):
+    def __init__(self, x = None,y = None):
         self.soldado = None       
+        self.x = x
+        self.y = y
 
 class beach(environment_things):
     def __init__(self):
@@ -119,11 +121,6 @@ class map:
                     s+='e '
             s+='\n'
         return s
-    def avaiable_moves(self):
-        pass   
-
-    def civilization_submap(sefl,id):
-        pass
 
     def generation_world(self, size, fill, prob_city, prob_town, prob_mount, prod_fruit,prod_fish):
         mapa = generacion_de_mapa_aleatorio(size[0],size[1],fill)

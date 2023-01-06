@@ -1,11 +1,9 @@
 
 import numpy as np
-from world_ import *
-from ..CSP.csp import CSP, backtracking_search
-from ..CSP.csp import UniversalDict
-from ..CSP.csp import AC3
+from world.world_ import *
+from CSP.csp import *
 import random
-from clases import *
+from world.clases import *
 
 
 
@@ -63,22 +61,39 @@ def myMapConstraint(A,a,B,b):
 
 
 class map:
-    def __init__(self,players,fill = None,prob_city = None, prob_town = None, prob_mount = None, prod_fruit = None,prod_fish = None):
-        self.size_x= self.size_y = len(players) * 2
-        self.players = players
+    def __init__(self,size_x,size_y,civilizations):
+        self.size_x= size_x
+        self.size_y = size_y
+        self.civilizations = civilizations
         self.nei = dict()
         self.map = np.ndarray((self.size_x,self.size_y),dtype=environment_things)
         for i in range(self.map.shape[0]):
             for j in range(self.map.shape[1]):
-                self.map[i,j] = environment_things(i,j)
+                self.map[i,j] = environment_things(i,j) # cambiar esto con world
         
         self.neighbors = self.parse_neighbors(self.map)   
         domain = [town(), beach(), ocean(),mountain(),plain(),port(),fish(),mine(),farm(),fruits()]
         self.domains = UniversalDict(domain)
         #self.domains2 = CivilizationDict()
+        #prob_city, prob_town, prob_mount, prod_fruit,prod_fish
 
         self.world = self.generation_world_csp()
 
+    def generation_world_csp(self):
+        world = self.map#np.full((self.size_x,self.size_y),environment_things(), dtype = environment_things)
+        neighbors = self.parse_neighbors(world)
+        #world = self.make_zones(world,self.civilizations) # reparte las ciudades de las civilizaciones
+        
+        #d = CivilizationDict()
+        map_csp = CSP(list(self.neighbors.keys()), self.domains,self.neighbors, myMapConstraint)  
+        assignments = backtracking_search(map_csp)
+        for cell in assignments.keys():
+            x = cell.x
+            y = cell.y
+            assignment = assignments[cell]
+            world[x,y] = assignment
+
+        return world    
 
     def parse_neighbors(self,map):
             def calculate_adyacents(map,x,y):
@@ -152,20 +167,6 @@ class map:
 
 
 
-    def generation_world_csp(self):
-        world = np.full((self.size_x,self.size_y),environment_things(), dtype = environment_things)
-        neighbors = self.parse_neighbors(world)
-        world = self.make_zones(world,self.players) # reparte las ciudades de las civilizaciones
-        
-        #d = CivilizationDict()
-        map_csp = CSP(list(self.neighbors.keys()), self.domains,self.neighbors, myMapConstraint)  
-        assignments = backtracking_search(map_csp)
-        for cell in assignments.keys():
-            x = cell.x
-            y = cell.y
-            world[x,y] = assignments[cell]
-
-        return world    
 
 
     

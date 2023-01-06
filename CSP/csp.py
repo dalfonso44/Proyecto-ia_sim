@@ -3,7 +3,7 @@ from itertools import count
 from operator import eq, neg
 from sortedcontainers import SortedSet
 import random
-from ..Search import search
+from Search import search
 
 
 def count(seq):
