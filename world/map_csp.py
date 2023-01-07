@@ -12,25 +12,22 @@ def different_values_constraint(A,a,B,b):
     """ A constraint saying two neighboring variables must differ in value"""
     return a!= b        
 
-def in_zone_constraint():
-    """"""   
-    pass
+
 
 def all_diff_constraint(*values):
     """Returns True if all values are different, False otherwise"""
     return len(values) is len(set(values))
 
-def valid_world_constraint(*values):
-    """Returns true if the is a valid world"""   
-    pass 
+
 
 
     
 
-def myMapConstraint(A,a,B,b):
-    r = random.randint(0,1)
-    if r == 0:return different_values_constraint(A,a,B,b) 
-    return not different_values_constraint(A,a,B,b)  
+def myMapConstraint(A,a,B,b, values = None):
+   r = random.randint(0,1)
+   if r == 0:
+        return different_values_constraint(A,a,B,b) 
+   return not different_values_constraint(A,a,B,b)  
 
 # class CivilizationDict():
 #     def __init__(self) -> None:
@@ -64,6 +61,8 @@ class map:
     def __init__(self,size_x,size_y,civilizations):
         self.size_x= size_x
         self.size_y = size_y
+        cells_count = size_x * size_y
+        l_m = cells_count / len(civilizations)
         self.civilizations = civilizations
         self.nei = dict()
         self.map = np.ndarray((self.size_x,self.size_y),dtype=environment_things)
@@ -120,21 +119,21 @@ class map:
         for i in range(self.world.shape[0]):
             for j in range(self.world.shape[1]):
                 if isinstance(self.world[i,j],ocean):
-                    s +='O '
+                    s +='Ocean '
                 elif isinstance(self.world[i,j],mountain):
-                    s +='M '
+                    s +='Mountain '
                 elif isinstance(self.world[i,j],fruits):
-                    s +='F '
+                    s +='Fruits '
                 elif isinstance(self.world[i,j],beach):
-                    s +='B '
+                    s +='Beach '
                 elif isinstance(self.world[i,j],city):
-                    s +='X '
+                    s +='City '
                 elif isinstance(self.world[i,j],town):
-                    s +='T '
+                    s +='Town '
                 elif isinstance(self.world[i,j],fish):
-                    s +='P '
+                    s +='Fish '
                 else:
-                    s+='L '
+                    s+='Other'
             s+='\n'
         return s
 
