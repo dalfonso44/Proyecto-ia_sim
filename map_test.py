@@ -1,9 +1,25 @@
 from world.map_csp import *
-from world.map_test import *
+from world.map_last import *
+from Game.Civilization import *
+from Players.MC_D_Player import *
+from Players.MC_Player import *
+from Players.MCTS_Player import *
+from Players.Player import *
+from Players.RandomPlayer import *
 
 #m = map(10,10,['viking','indian'])
+player1="MCTSPlayer"
+player2="MC_Player"
+player3="RandomPlayer"
+ID="0"
+vikings='vikings'
+romans='romans'
+chineese='chineese'
 
-m = create_map(5,5,['viking','indian','chinese','american'])
+players=[player1+'(vikings)',player2+'(romans)',player3+'(chineese)']
+a = Civilization([eval(players[0]),eval(players[1]),eval(players[2])])
+a.play_game(ID)
+
 
 def pri(m):
     s=''
@@ -47,5 +63,4 @@ def pri(m):
         return s
 
 
-a = pri(m)
-print(m)        
+        

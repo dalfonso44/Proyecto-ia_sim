@@ -1,0 +1,6 @@
+0
+         money   capital hab_pesca hab_esc hab_org pob score
+vikings      3  [(6, 0)]         0       0       0   6     0
+romans       3  [(9, 6)]         0       0       0   6     0
+chineese     3  [(3, 4)]         0       0       0   6     0
+<world.map_last.map object at 0x7fa5822ecbb0>

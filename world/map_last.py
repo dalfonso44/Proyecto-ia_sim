@@ -3,7 +3,6 @@ from collections import defaultdict
 from distutils.command.build import build
 from unittest import result
 import numpy as np
-from Game.Civilization import Civilization
 from world.world_ import *
 from CSP.csp import *
 import random
@@ -57,7 +56,15 @@ class map(CSP):
 
         domain = [town(), beach(), ocean(),mountain(),plain(),port(),fish(),mine(),farm(),fruits()]
         domains = UniversalDict(domain)
-        super().__init__(neighbors.keys(), domains, neighbors, myMapConstraint)
+        m = CSP(list(neighbors.keys()), domains, neighbors, myMapConstraint)
+        assignments = backtracking_search(m)
+        for assignment in assignments:
+            value = assignments[assignment]
+            x= assignment.x
+            y = assignment.y
+            self.map[x,y] = value
+        
+
        
 
     def nconflicts(self, var, val, assignment):
