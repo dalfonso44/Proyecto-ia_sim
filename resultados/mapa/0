@@ -1,5 +1,6 @@
 0
          money   capital hab_pesca hab_esc hab_org pob score
+<<<<<<< HEAD
 vikings      3  [(3, 3)]         0       0       0   6     0
 romans       3  [(1, 7)]         0       0       0   6     0
 chineese     3  [(7, 6)]         0       0       0   6     0
@@ -509,3 +510,9 @@ O_ O_ O_ O_ P_ K_ X_ Y_ B_ Pg
 O_ O_ O_ O_ P_ Y_ K_ K_ M_ P_ 
 O_ O_ O_ O_ B_ Pg B_ P_ P_ Pg 
 
+=======
+vikings      3  [(6, 0)]         0       0       0   6     0
+romans       3  [(9, 6)]         0       0       0   6     0
+chineese     3  [(3, 4)]         0       0       0   6     0
+<world.map_last.map object at 0x7fa5822ecbb0>
+>>>>>>> a9d482ba7803714e8ef28ceb3c981f9c02f642a4

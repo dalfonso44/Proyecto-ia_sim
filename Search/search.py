@@ -22,9 +22,9 @@ class Problem(object):
     def action_cost(self,s,a,s1) : return 1 # implementar segun el problema
     def h(self,node): return 0
 
-    def __str__(self) -> str:
-        return '{}({!r}, {!r})'.format(
-            type(self).__name__, self.initial, self.goal)
+    # def __str__(self) -> str:
+    #     return '{}({!r}, {!r})'.format(
+    #         type(self).__name__, self.initial, self.goal)
 
 #........................................................................................................
 
