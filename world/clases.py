@@ -218,9 +218,9 @@ class Soldado:
                 if self.row+j<0 or self.row+j>=civ.map.map.shape[0] or self.col+k<0 or self.col+k>=civ.map.map.shape[1]:
                     continue
                 if civ.accesible(civ.map.map[self.row,self.col], civ.map.map[self.row+j,self.col+k],current_player.habilidades):
-                    if self.map.map[self.row+j,self.col+k].soldado != None and self.map.map[self.row+j,self.col+k].soldado.civilization !=current_player.civilization:
+                    if civ.map.map[self.row+j,self.col+k].soldado != None and civ.map.map[self.row+j,self.col+k].soldado.civilization !=current_player.civilization:
                         moves.append('fight(*'+str((self.row,self.col,self.row+j,self.col+k))+')')
-                    if self.map.map[self.row+j,self.col+k].soldado == None:
+                    if civ.map.map[self.row+j,self.col+k].soldado == None:
                         moves.append('move(*'+str((self.row,self.col,self.row+j,self.col+k))+')')
         return moves
     

@@ -126,7 +126,7 @@ class Civilization():
             for j,k in zip(dr,dc):
                 if i.row+j<0 or i.row+j>=self.map.map.shape[0] or i.col+k<0 or i.col+k>=self.map.map.shape[1]:
                     continue
-                if accesible(self.map.map[i.row,i.col], self.map.map[i.row+j,i.col+k],current_player.habilidades):
+                if self.accesible(self.map.map[i.row,i.col], self.map.map[i.row+j,i.col+k],current_player.habilidades):
                     if self.map.map[i.row+j,i.col+k].soldado != None and self.map.map[i.row+j,i.col+k].soldado.civilization !=current_player.civilization:
                         actions.append('fight(*'+str((i.row,i.col,i.row+j,i.col+k))+')')
                     if self.map.map[i.row+j,i.col+k].soldado == None:
@@ -349,16 +349,16 @@ class Civilization():
                                 h.precio+=1
         return 0
 
-def accesible(position, new_position, habilidades):
-    if(not habilidades[1][0].desbloqueada) and new_position.__class__ is mountain:
-        return False
-    if(not habilidades[0][2].desbloqueada) and new_position.__class__ is ocean:
-        return False
-    if new_position.__class__ is port:  
+    def accesible(self,position, new_position, habilidades):
+        if(not habilidades[1][0].desbloqueada) and new_position.__class__ is mountain:
+            return False
+        if(not habilidades[0][2].desbloqueada) and new_position.__class__ is ocean:
+            return False
+        if new_position.__class__ is port:  
+            return True
+        if new_position.__class__ is beach and not (position.__class__ is beach or position.__class__ is ocean):  
+            return False
         return True
-    if new_position.__class__ is beach and not (position.__class__ is beach or position.__class__ is ocean):  
-        return False
-    return True
 
 
                 

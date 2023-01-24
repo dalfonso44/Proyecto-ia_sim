@@ -12,8 +12,8 @@ if vsc:
     player1="MCTSPlayer"
     player2="MC_Player"
     player3="RandomPlayer"
-    ID_i="103"
-    ID_f="104"
+    ID_i="105"
+    ID_f="110"
 else:
     player1=sys.argv[1]
     player2=sys.argv[2]
