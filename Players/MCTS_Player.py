@@ -4,7 +4,7 @@ from Players.Node import *
 
 
 class MCTSPlayer(Jugador):
-    def __init__(self, civilization,B=10,H=2):
+    def __init__(self, civilization,B=100,H=3):
         super().__init__(civilization)
         self.B=B
         self.H=H

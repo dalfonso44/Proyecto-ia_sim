@@ -207,8 +207,28 @@ class Soldado:
         elif mapa[self.row,self.col].__class__ in self.incomodidad:
             panic+=0.5
 
-        return (insp*self.inspiracion,panic*self.panico)
+        return (int(insp*self.inspiracion),int(panic*self.panico))
 
+    def available_move(self, civ):
+        moves=[]
+        current_player = civ.players[civ.actual_player]
+        if not self.energy:
+            return moves 
+        for j,k in zip(dr,dc):
+                if self.row+j<0 or self.row+j>=civ.map.map.shape[0] or self.col+k<0 or self.col+k>=civ.map.map.shape[1]:
+                    continue
+                if civ.accesible(civ.map.map[self.row,self.col], civ.map.map[self.row+j,self.col+k],current_player.habilidades):
+                    if self.map.map[self.row+j,self.col+k].soldado != None and self.map.map[self.row+j,self.col+k].soldado.civilization !=current_player.civilization:
+                        moves.append('fight(*'+str((self.row,self.col,self.row+j,self.col+k))+')')
+                    if self.map.map[self.row+j,self.col+k].soldado == None:
+                        moves.append('move(*'+str((self.row,self.col,self.row+j,self.col+k))+')')
+        return moves
+    
+    def play(self,civ):
+        move = self.available_move(civ)
+        if move==[]:
+            return 0 
+        return eval("civ."+random.choice(move)[:-1]+",True)") 
 
     def ataque_method(self,mapa):
         medidas = self.inspiracion_method(mapa)
