@@ -1,12 +1,12 @@
-
 import numpy as np
-from world_ import *
-from ..CSP.csp import CSP, backtracking_search
-from ..CSP.csp import UniversalDict
-from ..CSP.csp import AC3
+#from world_ import *
+from world.world_ import *
+#from ..CSP.csp import CSP, backtracking_search
+#from ..CSP.csp import UniversalDict
+#from ..CSP.csp import AC3
 import random
-from clases import *
-
+from world.clases import *
+from CSP.csp import *
 
 
 
@@ -70,7 +70,8 @@ class map:
         self.map = np.ndarray((self.size_x,self.size_y),dtype=environment_things)
         for i in range(self.map.shape[0]):
             for j in range(self.map.shape[1]):
-                self.map[i,j] = environment_things(i,j)
+#                self.map[i,j] = environment_things(i,j)
+                self.map[i,j] = environment_things()
         
         self.neighbors = self.parse_neighbors(self.map)   
         domain = [town(), beach(), ocean(),mountain(),plain(),port(),fish(),mine(),farm(),fruits()]
@@ -139,12 +140,14 @@ class map:
         y = -1
         for player in players:
             civ = player.civilization
-            c = city(civ)
+            c = city(civ,0,0)
             #c.zone = civ
             
             while (len(cities_loc) > 0 and (x,y) not in cities_loc):
                 x = random.randint(0,world.shape[0] -1)
                 y = random.randint(0,world.shape[1] - 1)
+            c.row=x
+            c.col=y
             world [x,y] = c
             world = propagate_zone(x,y,world,civ)
             cities_loc.append((x,y))
@@ -165,11 +168,6 @@ class map:
             y = cell.y
             world[x,y] = assignments[cell]
 
-        return world    
-
-
-    
-
-   
+        return world 
 
 

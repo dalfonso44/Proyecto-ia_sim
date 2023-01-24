@@ -1,0 +1,572 @@
+0
+         money    capital hab_pesca hab_esc hab_org pob score
+vikings      3  [(14, 8)]         0       0       0   6     0
+romans       3  [(0, 14)]         0       0       0   6     0
+chineese     3   [(6, 5)]         0       0       0   6     0
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ X_ B_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ B_ L_ M_ P_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ B_ B_ B_ B_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ F_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ L_ L_ L_ L_ M_ L_ L_ L_ T_ F_ B_ 
+O_ O_ O_ O_ P_ B_ B_ B_ B_ B_ B_ B_ L_ L_ L_ L_ L_ M_ B_ B_ 
+O_ O_ O_ O_ B_ X_ L_ L_ P_ O_ O_ P_ F_ L_ L_ L_ L_ B_ B_ O_ 
+B_ B_ B_ O_ B_ M_ L_ L_ B_ B_ O_ B_ L_ L_ L_ L_ F_ B_ B_ O_ 
+B_ L_ B_ B_ B_ L_ L_ T_ L_ B_ P_ B_ L_ L_ L_ L_ F_ F_ B_ O_ 
+P_ B_ B_ B_ L_ L_ F_ F_ L_ P_ B_ L_ L_ L_ L_ L_ F_ B_ B_ O_ 
+O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ M_ L_ L_ P_ B_ O_ O_ 
+O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+O_ O_ O_ O_ O_ B_ B_ B_ L_ L_ L_ M_ L_ L_ B_ B_ O_ B_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ B_ M_ L_ L_ F_ L_ L_ B_ B_ O_ B_ B_ B_ 
+O_ B_ P_ B_ B_ O_ O_ B_ X_ F_ L_ L_ L_ L_ L_ P_ O_ O_ O_ O_ 
+B_ P_ L_ L_ B_ B_ B_ B_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+B_ L_ L_ L_ L_ L_ B_ B_ B_ F_ L_ L_ L_ T_ L_ L_ B_ B_ L_ B_ 
+B_ L_ L_ L_ L_ T_ F_ B_ P_ L_ L_ L_ L_ L_ L_ L_ L_ T_ F_ F_ 
+L_ L_ L_ M_ L_ L_ L_ F_ P_ B_ L_ L_ M_ L_ L_ L_ L_ L_ L_ M_ 
+B_ B_ P_ L_ L_ L_ L_ B_ B_ B_ B_ L_ L_ B_ B_ B_ L_ L_ L_ B_ 
+
+1
+         money    capital hab_pesca hab_esc hab_org pob score
+vikings      3  [(14, 8)]         0       0       0   6    10
+romans       3  [(0, 14)]         0       0       0   6    10
+chineese     3   [(6, 5)]         0       0       0   6    10
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Xg B_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ B_ L_ M_ P_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ B_ B_ B_ B_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ F_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ L_ L_ L_ L_ M_ L_ L_ L_ T_ F_ B_ 
+O_ O_ O_ O_ P_ B_ B_ B_ B_ B_ B_ B_ L_ L_ L_ L_ L_ M_ B_ B_ 
+O_ O_ O_ O_ B_ Xg L_ L_ P_ O_ O_ P_ F_ L_ L_ L_ L_ B_ B_ O_ 
+B_ B_ B_ O_ B_ M_ L_ L_ B_ B_ O_ B_ L_ L_ L_ L_ F_ B_ B_ O_ 
+B_ L_ B_ B_ B_ L_ L_ T_ L_ B_ P_ B_ L_ L_ L_ L_ F_ F_ B_ O_ 
+P_ B_ B_ B_ L_ L_ F_ F_ L_ P_ B_ L_ L_ L_ L_ L_ F_ B_ B_ O_ 
+O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ M_ L_ L_ P_ B_ O_ O_ 
+O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+O_ O_ O_ O_ O_ B_ B_ B_ L_ L_ L_ M_ L_ L_ B_ B_ O_ B_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ B_ M_ L_ L_ F_ L_ L_ B_ B_ O_ B_ B_ B_ 
+O_ B_ P_ B_ B_ O_ O_ B_ Xg F_ L_ L_ L_ L_ L_ P_ O_ O_ O_ O_ 
+B_ P_ L_ L_ B_ B_ B_ B_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+B_ L_ L_ L_ L_ L_ B_ B_ B_ F_ L_ L_ L_ T_ L_ L_ B_ B_ L_ B_ 
+B_ L_ L_ L_ L_ T_ F_ B_ P_ L_ L_ L_ L_ L_ L_ L_ L_ T_ F_ F_ 
+L_ L_ L_ M_ L_ L_ L_ F_ P_ B_ L_ L_ M_ L_ L_ L_ L_ L_ L_ M_ 
+B_ B_ P_ L_ L_ L_ L_ B_ B_ B_ B_ L_ L_ B_ B_ B_ L_ L_ L_ B_ 
+
+2
+         money    capital hab_pesca hab_esc hab_org pob score
+vikings      5  [(14, 8)]         0       0       0   6    10
+romans       3  [(0, 14)]         0       0       0   6    20
+chineese     5   [(6, 5)]         0       0       0   6    10
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Xg B_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ B_ Lg M_ P_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ B_ B_ B_ B_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ F_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ L_ L_ L_ L_ M_ L_ L_ L_ T_ F_ B_ 
+O_ O_ O_ O_ P_ B_ B_ B_ B_ B_ B_ B_ L_ L_ L_ L_ L_ M_ B_ B_ 
+O_ O_ O_ O_ B_ X_ Lg L_ P_ O_ O_ P_ F_ L_ L_ L_ L_ B_ B_ O_ 
+B_ B_ B_ O_ B_ M_ L_ L_ B_ B_ O_ B_ L_ L_ L_ L_ F_ B_ B_ O_ 
+B_ L_ B_ B_ B_ L_ L_ T_ L_ B_ P_ B_ L_ L_ L_ L_ F_ F_ B_ O_ 
+P_ B_ B_ B_ L_ L_ F_ F_ L_ P_ B_ L_ L_ L_ L_ L_ F_ B_ B_ O_ 
+O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ M_ L_ L_ P_ B_ O_ O_ 
+O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+O_ O_ O_ O_ O_ B_ B_ B_ L_ L_ L_ M_ L_ L_ B_ B_ O_ B_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ B_ M_ L_ L_ F_ L_ L_ B_ B_ O_ B_ B_ B_ 
+O_ B_ P_ B_ B_ O_ O_ B_ Xg F_ L_ L_ L_ L_ L_ P_ O_ O_ O_ O_ 
+B_ P_ L_ L_ B_ B_ B_ B_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+B_ L_ L_ L_ L_ L_ B_ B_ B_ F_ L_ L_ L_ T_ L_ L_ B_ B_ L_ B_ 
+B_ L_ L_ L_ L_ T_ F_ B_ P_ L_ L_ L_ L_ L_ L_ L_ L_ T_ F_ F_ 
+L_ L_ L_ M_ L_ L_ L_ F_ P_ B_ L_ L_ M_ L_ L_ L_ L_ L_ L_ M_ 
+B_ B_ P_ L_ L_ L_ L_ B_ B_ B_ B_ L_ L_ B_ B_ B_ L_ L_ L_ B_ 
+
+3
+         money    capital hab_pesca hab_esc hab_org pob score
+vikings      7  [(14, 8)]         0       0       0   6    10
+romans       5  [(0, 14)]         0       0       0   6    20
+chineese     5   [(6, 5)]         0       0       0   6    20
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Xg B_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ B_ Lg M_ P_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ B_ B_ B_ B_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ F_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ L_ L_ L_ L_ M_ L_ L_ L_ T_ F_ B_ 
+O_ O_ O_ O_ P_ B_ B_ B_ B_ B_ B_ B_ L_ L_ L_ L_ L_ M_ B_ B_ 
+O_ O_ O_ O_ B_ Xg L_ Lg P_ O_ O_ P_ F_ L_ L_ L_ L_ B_ B_ O_ 
+B_ B_ B_ O_ B_ M_ L_ L_ B_ B_ O_ B_ L_ L_ L_ L_ F_ B_ B_ O_ 
+B_ L_ B_ B_ B_ L_ L_ T_ L_ B_ P_ B_ L_ L_ L_ L_ F_ F_ B_ O_ 
+P_ B_ B_ B_ L_ L_ F_ F_ L_ P_ B_ L_ L_ L_ L_ L_ F_ B_ B_ O_ 
+O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ M_ L_ L_ P_ B_ O_ O_ 
+O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+O_ O_ O_ O_ O_ B_ B_ B_ L_ L_ L_ M_ L_ L_ B_ B_ O_ B_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ B_ M_ L_ L_ F_ L_ L_ B_ B_ O_ B_ B_ B_ 
+O_ B_ P_ B_ B_ O_ O_ B_ X_ F_ L_ L_ L_ L_ L_ P_ O_ O_ O_ O_ 
+B_ P_ L_ L_ B_ B_ B_ B_ Lg L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+B_ L_ L_ L_ L_ L_ B_ B_ B_ F_ L_ L_ L_ T_ L_ L_ B_ B_ L_ B_ 
+B_ L_ L_ L_ L_ T_ F_ B_ P_ L_ L_ L_ L_ L_ L_ L_ L_ T_ F_ F_ 
+L_ L_ L_ M_ L_ L_ L_ F_ P_ B_ L_ L_ M_ L_ L_ L_ L_ L_ L_ M_ 
+B_ B_ P_ L_ L_ L_ L_ B_ B_ B_ B_ L_ L_ B_ B_ B_ L_ L_ L_ B_ 
+
+4
+         money    capital hab_pesca hab_esc hab_org pob score
+vikings      3  [(14, 8)]         0       0       1   6   110
+romans       5  [(0, 14)]         0       0       0   6    30
+chineese     5   [(6, 5)]         0       0       0   6    30
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Xg B_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ B_ Lg M_ P_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ L_ Lg B_ B_ B_ B_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ F_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ L_ L_ L_ L_ M_ L_ L_ L_ T_ F_ B_ 
+O_ O_ O_ O_ P_ B_ B_ B_ B_ B_ B_ B_ L_ L_ L_ L_ L_ M_ B_ B_ 
+O_ O_ O_ O_ B_ Xg Lg L_ P_ O_ O_ P_ F_ L_ L_ L_ L_ B_ B_ O_ 
+B_ B_ B_ O_ B_ M_ L_ Lg B_ B_ O_ B_ L_ L_ L_ L_ F_ B_ B_ O_ 
+B_ L_ B_ B_ B_ L_ L_ T_ L_ B_ P_ B_ L_ L_ L_ L_ F_ F_ B_ O_ 
+P_ B_ B_ B_ L_ L_ F_ F_ L_ P_ B_ L_ L_ L_ L_ L_ F_ B_ B_ O_ 
+O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ M_ L_ L_ P_ B_ O_ O_ 
+O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+O_ O_ O_ O_ O_ B_ B_ B_ L_ L_ L_ M_ L_ L_ B_ B_ O_ B_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ B_ M_ L_ L_ F_ L_ L_ B_ B_ O_ B_ B_ B_ 
+O_ B_ P_ B_ B_ O_ O_ B_ X_ F_ L_ L_ L_ L_ L_ P_ O_ O_ O_ O_ 
+B_ P_ L_ L_ B_ B_ B_ B_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+B_ L_ L_ L_ L_ L_ B_ B_ B_ Fg L_ L_ L_ T_ L_ L_ B_ B_ L_ B_ 
+B_ L_ L_ L_ L_ T_ F_ B_ P_ L_ L_ L_ L_ L_ L_ L_ L_ T_ F_ F_ 
+L_ L_ L_ M_ L_ L_ L_ F_ P_ B_ L_ L_ M_ L_ L_ L_ L_ L_ L_ M_ 
+B_ B_ P_ L_ L_ L_ L_ B_ B_ B_ B_ L_ L_ B_ B_ B_ L_ L_ L_ B_ 
+
+5
+         money    capital hab_pesca hab_esc hab_org pob score
+vikings      3  [(14, 8)]         0       0       1   6   120
+romans       5  [(0, 14)]         0       0       0   6    40
+chineese     7   [(6, 5)]         0       0       0   6    30
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Xg B_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ B_ L_ M_ Pg O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ Lg Lg L_ B_ B_ B_ B_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ F_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ L_ L_ L_ L_ M_ L_ L_ L_ T_ F_ B_ 
+O_ O_ O_ O_ P_ B_ B_ B_ B_ B_ B_ B_ L_ L_ L_ L_ L_ M_ B_ B_ 
+O_ O_ O_ O_ B_ X_ L_ Lg P_ O_ O_ P_ F_ L_ L_ L_ L_ B_ B_ O_ 
+B_ B_ B_ O_ B_ M_ Lg Lg B_ B_ O_ B_ L_ L_ L_ L_ F_ B_ B_ O_ 
+B_ L_ B_ B_ B_ L_ L_ T_ L_ B_ P_ B_ L_ L_ L_ L_ F_ F_ B_ O_ 
+P_ B_ B_ B_ L_ L_ F_ F_ L_ P_ B_ L_ L_ L_ L_ L_ F_ B_ B_ O_ 
+O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ M_ L_ L_ P_ B_ O_ O_ 
+O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+O_ O_ O_ O_ O_ B_ B_ B_ L_ L_ L_ M_ L_ L_ B_ B_ O_ B_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ B_ M_ L_ L_ F_ L_ L_ B_ B_ O_ B_ B_ B_ 
+O_ B_ P_ B_ B_ O_ O_ B_ Xg F_ L_ L_ L_ L_ L_ P_ O_ O_ O_ O_ 
+B_ P_ L_ L_ B_ B_ B_ B_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+B_ L_ L_ L_ L_ L_ B_ B_ B_ F_ L_ L_ L_ T_ L_ L_ B_ B_ L_ B_ 
+B_ L_ L_ L_ L_ T_ F_ B_ Pg L_ L_ L_ L_ L_ L_ L_ L_ T_ F_ F_ 
+L_ L_ L_ M_ L_ L_ L_ F_ P_ B_ L_ L_ M_ L_ L_ L_ L_ L_ L_ M_ 
+B_ B_ P_ L_ L_ L_ L_ B_ B_ B_ B_ L_ L_ B_ B_ B_ L_ L_ L_ B_ 
+
+6
+         money    capital hab_pesca hab_esc hab_org pob score
+vikings      3  [(14, 8)]         0       0       1   7   140
+romans       7  [(0, 14)]         0       0       0   6    40
+chineese     3   [(6, 5)]         0       0       1   6   130
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Xg B_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ B_ L_ M_ Pg O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ Lg L_ L_ B_ B_ B_ B_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ Lg L_ L_ L_ L_ F_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ L_ L_ L_ L_ M_ L_ L_ L_ T_ F_ B_ 
+O_ O_ O_ O_ P_ B_ B_ B_ B_ B_ B_ B_ L_ L_ L_ L_ L_ M_ B_ B_ 
+O_ O_ O_ O_ B_ Xg L_ L_ Pg O_ O_ P_ F_ L_ L_ L_ L_ B_ B_ O_ 
+B_ B_ B_ O_ B_ M_ L_ L_ B_ B_ O_ B_ L_ L_ L_ L_ F_ B_ B_ O_ 
+B_ L_ B_ B_ B_ L_ L_ T_ Lg B_ P_ B_ L_ L_ L_ L_ F_ F_ B_ O_ 
+P_ B_ B_ B_ L_ L_ F_ F_ L_ P_ B_ L_ L_ L_ L_ L_ F_ B_ B_ O_ 
+O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ M_ L_ L_ P_ B_ O_ O_ 
+O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+O_ O_ O_ O_ O_ B_ B_ B_ L_ L_ L_ M_ L_ L_ B_ B_ O_ B_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ B_ M_ L_ L_ F_ L_ L_ B_ B_ O_ B_ B_ B_ 
+O_ B_ P_ B_ B_ O_ O_ B_ X_ Y_ L_ L_ L_ L_ L_ P_ O_ O_ O_ O_ 
+B_ P_ L_ L_ B_ B_ B_ B_ Lg L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+B_ L_ L_ L_ L_ L_ B_ B_ B_ F_ L_ L_ L_ T_ L_ L_ B_ B_ L_ B_ 
+B_ L_ L_ L_ L_ T_ F_ B_ P_ L_ L_ L_ L_ L_ L_ L_ L_ T_ F_ F_ 
+L_ L_ L_ M_ L_ L_ L_ Fg P_ B_ L_ L_ M_ L_ L_ L_ L_ L_ L_ M_ 
+B_ B_ P_ L_ L_ L_ L_ B_ B_ B_ B_ L_ L_ B_ B_ B_ L_ L_ L_ B_ 
+
+7
+         money    capital hab_pesca hab_esc hab_org pob score
+vikings      3  [(14, 8)]         0       0       1   7   150
+romans       7  [(0, 14)]         0       0       0   6    50
+chineese     5   [(6, 5)]         0       0       1   6   130
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Xg B_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ B_ Lg M_ P_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Lg L_ L_ Lg B_ B_ B_ B_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ L_ Lg L_ L_ L_ F_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ L_ L_ L_ L_ M_ L_ L_ L_ T_ F_ B_ 
+O_ O_ O_ O_ P_ B_ B_ B_ B_ B_ B_ B_ L_ L_ L_ L_ L_ M_ B_ B_ 
+O_ O_ O_ O_ B_ Xg L_ Lg P_ O_ O_ P_ F_ L_ L_ L_ L_ B_ B_ O_ 
+B_ B_ B_ O_ B_ M_ L_ L_ B_ B_ O_ B_ L_ L_ L_ L_ F_ B_ B_ O_ 
+B_ L_ B_ B_ B_ L_ L_ T_ L_ B_ P_ B_ L_ L_ L_ L_ F_ F_ B_ O_ 
+P_ B_ B_ B_ L_ L_ F_ F_ Lg P_ B_ L_ L_ L_ L_ L_ F_ B_ B_ O_ 
+O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ M_ L_ L_ P_ B_ O_ O_ 
+O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+O_ O_ O_ O_ O_ B_ B_ B_ L_ L_ L_ M_ L_ L_ B_ B_ O_ B_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ B_ M_ L_ L_ F_ L_ L_ B_ B_ O_ B_ B_ B_ 
+O_ B_ P_ B_ B_ O_ O_ B_ Xg Y_ L_ L_ L_ L_ L_ P_ O_ O_ O_ O_ 
+B_ P_ L_ L_ B_ B_ B_ B_ L_ Lg L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+B_ L_ L_ L_ L_ L_ B_ B_ B_ F_ L_ L_ L_ T_ L_ L_ B_ B_ L_ B_ 
+B_ L_ L_ L_ L_ T_ F_ B_ P_ L_ L_ L_ L_ L_ L_ L_ L_ T_ F_ F_ 
+L_ L_ L_ M_ L_ L_ L_ F_ P_ B_ L_ L_ M_ L_ L_ L_ L_ L_ L_ M_ 
+B_ B_ P_ L_ L_ L_ Lg B_ B_ B_ B_ L_ L_ B_ B_ B_ L_ L_ L_ B_ 
+
+8
+         money    capital hab_pesca hab_esc hab_org pob score
+vikings      3  [(14, 8)]         0       0       1   7   160
+romans       7  [(0, 14)]         0       0       0   6    60
+chineese     5   [(6, 5)]         0       0       1   6   140
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Xg B_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ B_ Lg M_ Pg O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ Lg Lg B_ B_ B_ B_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Lg L_ L_ L_ L_ L_ L_ F_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ L_ L_ L_ L_ M_ L_ L_ L_ T_ F_ B_ 
+O_ O_ O_ O_ P_ B_ B_ B_ B_ B_ B_ B_ L_ L_ L_ L_ L_ M_ B_ B_ 
+O_ O_ O_ O_ B_ Xg Lg L_ Pg O_ O_ P_ F_ L_ L_ L_ L_ B_ B_ O_ 
+B_ B_ B_ O_ B_ M_ L_ L_ B_ B_ O_ B_ L_ L_ L_ L_ F_ B_ B_ O_ 
+B_ L_ B_ B_ B_ L_ L_ Tg L_ B_ P_ B_ L_ L_ L_ L_ F_ F_ B_ O_ 
+P_ B_ B_ B_ L_ L_ F_ F_ L_ P_ B_ L_ L_ L_ L_ L_ F_ B_ B_ O_ 
+O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ M_ L_ L_ P_ B_ O_ O_ 
+O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+O_ O_ O_ O_ O_ B_ B_ B_ L_ L_ L_ M_ L_ L_ B_ B_ O_ B_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ B_ M_ Lg L_ F_ L_ L_ B_ B_ O_ B_ B_ B_ 
+O_ B_ P_ B_ B_ O_ O_ B_ Xg Y_ Lg L_ L_ L_ L_ P_ O_ O_ O_ O_ 
+B_ P_ L_ L_ B_ B_ B_ B_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+B_ L_ L_ L_ L_ L_ B_ B_ B_ F_ L_ L_ L_ T_ L_ L_ B_ B_ L_ B_ 
+B_ L_ L_ L_ L_ T_ F_ B_ P_ L_ L_ L_ L_ L_ L_ L_ L_ T_ F_ F_ 
+L_ L_ L_ M_ L_ L_ L_ F_ P_ B_ L_ L_ M_ L_ L_ L_ L_ L_ L_ M_ 
+B_ B_ P_ L_ L_ Lg L_ B_ B_ B_ B_ L_ L_ B_ B_ B_ L_ L_ L_ B_ 
+
+9
+         money    capital hab_pesca hab_esc hab_org pob score
+vikings      5  [(14, 8)]         0       0       1   7   160
+romans       9  [(0, 14)]         0       0       0   6    60
+chineese     5   [(6, 5)]         0       0       1   6   150
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Xg B_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ B_ L_ M_ Pg O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ Lg Lg Lg B_ B_ B_ B_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ F_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ L_ Lg L_ L_ M_ L_ L_ L_ T_ F_ B_ 
+O_ O_ O_ O_ P_ B_ B_ B_ B_ B_ B_ B_ L_ L_ L_ L_ L_ M_ B_ B_ 
+O_ O_ O_ O_ B_ Xg L_ Lg P_ O_ O_ P_ F_ L_ L_ L_ L_ B_ B_ O_ 
+B_ B_ B_ O_ B_ M_ Lg Lg B_ B_ O_ B_ L_ L_ L_ L_ F_ B_ B_ O_ 
+B_ L_ B_ B_ B_ L_ Lg T_ L_ B_ P_ B_ L_ L_ L_ L_ F_ F_ B_ O_ 
+P_ B_ B_ B_ L_ L_ F_ F_ L_ P_ B_ L_ L_ L_ L_ L_ F_ B_ B_ O_ 
+O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ M_ L_ L_ P_ B_ O_ O_ 
+O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+O_ O_ O_ O_ O_ B_ B_ B_ L_ L_ L_ M_ L_ L_ B_ B_ O_ B_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ B_ M_ Lg Lg F_ L_ L_ B_ B_ O_ B_ B_ B_ 
+O_ B_ P_ B_ B_ O_ O_ B_ X_ Y_ L_ L_ L_ L_ L_ P_ O_ O_ O_ O_ 
+B_ P_ L_ L_ B_ B_ B_ B_ Lg L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+B_ L_ L_ L_ L_ L_ B_ B_ B_ F_ L_ L_ L_ T_ L_ L_ B_ B_ L_ B_ 
+B_ L_ L_ L_ L_ T_ F_ B_ P_ L_ L_ L_ L_ L_ L_ L_ L_ T_ F_ F_ 
+L_ L_ L_ M_ Lg L_ L_ F_ P_ B_ L_ L_ M_ L_ L_ L_ L_ L_ L_ M_ 
+B_ B_ P_ L_ L_ L_ L_ B_ B_ B_ B_ L_ L_ B_ B_ B_ L_ L_ L_ B_ 
+
+10
+         money    capital hab_pesca hab_esc hab_org pob score
+vikings      7  [(14, 8)]         0       0       1   7   160
+romans       3  [(0, 14)]         0       0       1   6   160
+chineese     7   [(6, 5)]         0       0       1   6   150
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Xg B_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ B_ Lg M_ P_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ L_ Lg B_ B_ B_ B_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ Lg Lg L_ Lg L_ L_ F_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ L_ L_ L_ L_ M_ L_ L_ L_ T_ F_ B_ 
+O_ O_ O_ O_ P_ B_ B_ B_ B_ B_ B_ B_ L_ L_ L_ L_ L_ M_ B_ B_ 
+O_ O_ O_ O_ B_ Xg L_ Lg P_ O_ O_ P_ F_ L_ L_ L_ L_ B_ B_ O_ 
+B_ B_ B_ O_ B_ M_ L_ L_ B_ B_ O_ B_ L_ L_ L_ L_ F_ B_ B_ O_ 
+B_ L_ B_ B_ B_ Lg L_ Tg L_ B_ P_ B_ L_ L_ L_ L_ F_ F_ B_ O_ 
+P_ B_ B_ B_ L_ Lg F_ F_ L_ P_ B_ L_ L_ L_ L_ L_ F_ B_ B_ O_ 
+O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ M_ L_ L_ P_ B_ O_ O_ 
+O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+O_ O_ O_ O_ O_ B_ B_ B_ L_ Lg L_ M_ L_ L_ B_ B_ O_ B_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ B_ M_ L_ L_ F_ L_ L_ B_ B_ O_ B_ B_ B_ 
+O_ B_ P_ B_ B_ O_ O_ B_ X_ Yg L_ L_ L_ L_ L_ P_ O_ O_ O_ O_ 
+B_ P_ L_ L_ B_ B_ B_ B_ L_ Lg L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+B_ L_ L_ L_ L_ L_ B_ B_ B_ F_ L_ L_ L_ T_ L_ L_ B_ B_ L_ B_ 
+B_ L_ L_ L_ L_ Tg F_ B_ P_ L_ L_ L_ L_ L_ L_ L_ L_ T_ F_ F_ 
+L_ L_ L_ M_ L_ L_ L_ F_ P_ B_ L_ L_ M_ L_ L_ L_ L_ L_ L_ M_ 
+B_ B_ P_ L_ L_ L_ L_ B_ B_ B_ B_ L_ L_ B_ B_ B_ L_ L_ L_ B_ 
+
+11
+         money             capital hab_pesca hab_esc hab_org pob score
+vikings     10  [(14, 8), (17, 5)]         0       0       1  10   440
+romans       3           [(0, 14)]         0       0       1   6   170
+chineese     9            [(6, 5)]         0       0       1   6   150
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Xg B_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ B_ Lg M_ Pg O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Lg L_ Lg L_ B_ B_ B_ B_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ Lg Lg L_ L_ L_ F_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ L_ L_ L_ L_ M_ L_ L_ L_ T_ F_ B_ 
+O_ O_ O_ O_ P_ B_ B_ B_ B_ B_ B_ B_ L_ L_ L_ L_ L_ M_ B_ B_ 
+O_ O_ O_ O_ B_ X_ L_ L_ Pg O_ O_ P_ F_ L_ L_ L_ L_ B_ B_ O_ 
+B_ B_ B_ O_ B_ M_ Lg L_ B_ B_ O_ B_ L_ L_ L_ L_ F_ B_ B_ O_ 
+B_ L_ B_ B_ B_ Lg Lg T_ L_ B_ P_ B_ L_ L_ L_ L_ F_ F_ B_ O_ 
+P_ B_ B_ B_ L_ L_ Fg F_ L_ P_ B_ L_ L_ L_ L_ L_ F_ B_ B_ O_ 
+O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ M_ L_ L_ P_ B_ O_ O_ 
+O_ O_ O_ O_ B_ B_ L_ L_ Lg L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+O_ O_ O_ O_ O_ B_ B_ B_ L_ L_ L_ M_ L_ L_ B_ B_ O_ B_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ B_ M_ L_ L_ F_ L_ L_ B_ B_ O_ B_ B_ B_ 
+O_ B_ P_ B_ B_ O_ O_ B_ X_ Yg L_ L_ L_ L_ L_ P_ O_ O_ O_ O_ 
+B_ P_ L_ L_ B_ B_ B_ B_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+B_ L_ L_ L_ L_ L_ B_ B_ B_ F_ Lg L_ L_ T_ L_ L_ B_ B_ L_ B_ 
+B_ L_ L_ L_ L_ Xg F_ B_ P_ L_ L_ L_ L_ L_ L_ L_ L_ T_ F_ F_ 
+L_ L_ L_ M_ L_ L_ L_ F_ P_ B_ L_ L_ M_ L_ L_ L_ L_ L_ L_ M_ 
+B_ B_ P_ L_ L_ L_ L_ B_ B_ B_ B_ L_ L_ B_ B_ B_ L_ L_ L_ B_ 
+
+12
+         money             capital hab_pesca hab_esc hab_org pob score
+vikings     13  [(14, 8), (17, 5)]         0       0       1  10   440
+romans       3           [(0, 14)]         0       0       1   6   180
+chineese    11            [(6, 5)]         0       0       1   6   150
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Xg B_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ B_ Lg M_ Pg O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ Lg L_ Lg B_ B_ B_ B_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ L_ Lg L_ L_ L_ F_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ L_ L_ Lg Lg M_ L_ L_ L_ T_ F_ B_ 
+O_ O_ O_ O_ P_ B_ B_ B_ B_ B_ B_ B_ L_ L_ L_ L_ L_ M_ B_ B_ 
+O_ O_ O_ O_ B_ Xg L_ L_ Pg O_ O_ P_ F_ L_ L_ L_ L_ B_ B_ O_ 
+B_ B_ B_ O_ B_ M_ L_ L_ B_ B_ O_ B_ L_ L_ L_ L_ F_ B_ B_ O_ 
+B_ L_ B_ B_ B_ Lg Lg T_ L_ B_ P_ B_ L_ L_ L_ L_ F_ F_ B_ O_ 
+P_ B_ B_ B_ L_ Lg F_ F_ L_ P_ B_ L_ L_ L_ L_ L_ F_ B_ B_ O_ 
+O_ O_ O_ B_ B_ L_ L_ Lg L_ L_ L_ L_ L_ M_ L_ L_ P_ B_ O_ O_ 
+O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+O_ O_ O_ O_ O_ B_ B_ B_ L_ L_ L_ M_ L_ L_ B_ B_ O_ B_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ B_ M_ L_ L_ F_ L_ L_ B_ B_ O_ B_ B_ B_ 
+O_ B_ P_ B_ B_ O_ O_ B_ X_ Y_ L_ L_ L_ L_ L_ P_ O_ O_ O_ O_ 
+B_ P_ L_ L_ B_ B_ B_ B_ L_ L_ Lg L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+B_ L_ L_ L_ Lg L_ B_ B_ B_ F_ L_ Lg L_ T_ L_ L_ B_ B_ L_ B_ 
+B_ L_ L_ L_ L_ X_ F_ B_ P_ L_ L_ L_ L_ L_ L_ L_ L_ T_ F_ F_ 
+L_ L_ L_ M_ L_ L_ L_ F_ P_ B_ L_ L_ M_ L_ L_ L_ L_ L_ L_ M_ 
+B_ B_ P_ L_ L_ L_ L_ B_ B_ B_ B_ L_ L_ B_ B_ B_ L_ L_ L_ B_ 
+
+13
+         money             capital hab_pesca hab_esc hab_org pob score
+vikings      5  [(14, 8), (17, 5)]         0       1       1  11   560
+romans       3           [(0, 14)]         0       0       1   6   190
+chineese    11            [(6, 5)]         0       0       1   6   160
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Xg B_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ B_ L_ M_ Pg O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ Lg L_ Lg B_ B_ B_ B_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ Lg Lg L_ Lg L_ F_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ L_ L_ Lg L_ M_ L_ L_ L_ T_ F_ B_ 
+O_ O_ O_ O_ Pg B_ B_ B_ B_ B_ B_ B_ Lg L_ L_ L_ L_ M_ B_ B_ 
+O_ O_ O_ O_ B_ Xg L_ Lg P_ O_ O_ P_ F_ L_ L_ L_ L_ B_ B_ O_ 
+B_ B_ B_ O_ B_ M_ L_ Lg B_ B_ O_ B_ L_ L_ L_ L_ F_ B_ B_ O_ 
+B_ L_ B_ B_ B_ L_ Lg T_ L_ B_ P_ B_ L_ L_ L_ L_ F_ F_ B_ O_ 
+P_ B_ B_ B_ L_ L_ Fg F_ L_ P_ B_ L_ L_ L_ L_ L_ F_ B_ B_ O_ 
+O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ M_ L_ L_ P_ B_ O_ O_ 
+O_ O_ O_ O_ B_ B_ L_ L_ Lg L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+O_ O_ O_ O_ O_ B_ B_ B_ L_ L_ L_ M_ L_ L_ B_ B_ O_ B_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ B_ M_ L_ L_ F_ L_ L_ B_ B_ O_ B_ B_ B_ 
+O_ B_ P_ B_ B_ O_ O_ B_ X_ Y_ L_ Lg L_ L_ L_ P_ O_ O_ O_ O_ 
+B_ P_ L_ L_ B_ B_ B_ B_ L_ L_ L_ L_ Lg L_ L_ B_ B_ B_ B_ P_ 
+B_ L_ L_ L_ L_ Lg B_ B_ B_ F_ L_ L_ L_ T_ L_ L_ B_ B_ L_ B_ 
+B_ L_ L_ L_ L_ X_ Y_ B_ P_ L_ L_ L_ L_ L_ L_ L_ L_ T_ F_ F_ 
+L_ L_ L_ M_ L_ L_ L_ F_ P_ B_ L_ L_ M_ L_ L_ L_ L_ L_ L_ M_ 
+B_ B_ P_ L_ L_ L_ L_ B_ B_ B_ B_ L_ L_ B_ B_ B_ L_ L_ L_ B_ 
+
+14
+         money             capital hab_pesca hab_esc hab_org pob score
+vikings      8  [(14, 8), (17, 5)]         0       1       1  11   560
+romans       5           [(0, 14)]         0       0       1   6   190
+chineese    13            [(6, 5)]         0       0       1   6   160
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Xg B_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ B_ L_ M_ Pg O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ Lg L_ Lg B_ B_ B_ B_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ Lg Lg L_ Lg L_ F_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ L_ L_ Lg L_ M_ L_ L_ L_ T_ F_ B_ 
+O_ O_ O_ O_ Pg B_ B_ B_ B_ B_ B_ B_ L_ Lg L_ L_ L_ M_ B_ B_ 
+O_ O_ O_ O_ B_ Xg Lg L_ P_ O_ O_ P_ F_ L_ L_ L_ L_ B_ B_ O_ 
+B_ B_ B_ O_ B_ M_ L_ Lg B_ B_ O_ B_ L_ L_ L_ L_ F_ B_ B_ O_ 
+B_ L_ B_ B_ B_ L_ Lg T_ L_ B_ P_ B_ L_ L_ L_ L_ F_ F_ B_ O_ 
+P_ B_ B_ B_ L_ Lg F_ F_ L_ P_ B_ L_ L_ L_ L_ L_ F_ B_ B_ O_ 
+O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ M_ L_ L_ P_ B_ O_ O_ 
+O_ O_ O_ O_ B_ B_ L_ Lg L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+O_ O_ O_ O_ O_ B_ B_ B_ L_ L_ L_ M_ L_ L_ B_ B_ O_ B_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ B_ M_ L_ L_ F_ Lg L_ B_ B_ O_ B_ B_ B_ 
+O_ B_ P_ B_ B_ O_ O_ B_ X_ Y_ L_ L_ L_ L_ L_ P_ O_ O_ O_ O_ 
+B_ P_ L_ L_ B_ B_ B_ B_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+B_ L_ L_ L_ L_ L_ B_ B_ B_ F_ L_ L_ Lg T_ L_ L_ B_ B_ L_ B_ 
+B_ L_ L_ L_ L_ X_ Yg B_ P_ L_ L_ L_ L_ L_ L_ L_ L_ T_ F_ F_ 
+L_ L_ L_ M_ L_ L_ L_ F_ P_ B_ L_ L_ M_ L_ L_ L_ L_ L_ L_ M_ 
+B_ B_ P_ L_ L_ L_ L_ B_ B_ B_ B_ L_ L_ B_ B_ B_ L_ L_ L_ B_ 
+
+15
+         money             capital hab_pesca hab_esc hab_org pob score
+vikings     11  [(14, 8), (17, 5)]         0       1       1  11   560
+romans       7           [(0, 14)]         0       0       1   6   190
+chineese     4            [(6, 5)]         0       1       1   6   270
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Xg B_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ B_ L_ M_ Pg O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ Lg Lg B_ B_ B_ B_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ Lg Lg L_ Lg L_ F_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ L_ L_ L_ Lg M_ L_ L_ L_ T_ F_ B_ 
+O_ O_ O_ O_ Pg B_ B_ B_ B_ B_ B_ B_ L_ L_ Lg L_ L_ M_ B_ B_ 
+O_ O_ O_ O_ B_ Xg L_ Lg P_ O_ O_ P_ F_ L_ L_ L_ L_ B_ B_ O_ 
+B_ B_ B_ O_ B_ M_ Lg L_ B_ B_ O_ B_ L_ L_ L_ L_ F_ B_ B_ O_ 
+B_ L_ B_ B_ B_ L_ Lg Tg Lg B_ P_ B_ L_ L_ L_ L_ F_ F_ B_ O_ 
+P_ B_ B_ B_ L_ L_ F_ F_ L_ P_ B_ L_ L_ L_ L_ L_ F_ B_ B_ O_ 
+O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ M_ L_ L_ P_ B_ O_ O_ 
+O_ O_ O_ O_ B_ B_ L_ Lg L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+O_ O_ O_ O_ O_ B_ B_ B_ L_ L_ L_ M_ L_ L_ B_ B_ O_ B_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ B_ M_ L_ L_ F_ Lg L_ B_ B_ O_ B_ B_ B_ 
+O_ B_ P_ B_ B_ O_ O_ B_ X_ Y_ L_ L_ L_ L_ L_ P_ O_ O_ O_ O_ 
+B_ P_ L_ L_ B_ B_ B_ B_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+B_ L_ L_ L_ L_ L_ B_ B_ B_ F_ L_ L_ Lg T_ L_ L_ B_ B_ L_ B_ 
+B_ L_ L_ L_ L_ X_ Yg B_ P_ L_ L_ L_ L_ L_ L_ L_ L_ T_ F_ F_ 
+L_ L_ L_ M_ L_ L_ L_ F_ P_ B_ L_ L_ M_ L_ L_ L_ L_ L_ L_ M_ 
+B_ B_ P_ L_ L_ L_ L_ B_ B_ B_ B_ L_ L_ B_ B_ B_ L_ L_ L_ B_ 
+
+16
+         money             capital hab_pesca hab_esc hab_org pob score
+vikings      4  [(14, 8), (17, 5)]         0       2       1  11   660
+romans       9           [(0, 14)]         0       0       1   6   190
+chineese     6            [(6, 5)]         0       1       1   6   270
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Xg B_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ B_ L_ M_ Pg O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ Lg Lg B_ B_ B_ B_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ Lg Lg L_ Lg L_ F_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ L_ L_ L_ Lg M_ L_ L_ L_ T_ F_ B_ 
+O_ O_ O_ O_ Pg B_ B_ B_ B_ B_ B_ B_ L_ L_ Lg L_ L_ M_ B_ B_ 
+O_ O_ O_ O_ B_ Xg Lg L_ P_ O_ O_ P_ F_ L_ L_ L_ L_ B_ B_ O_ 
+B_ B_ B_ O_ B_ M_ Lg Lg B_ B_ O_ B_ L_ L_ L_ L_ F_ B_ B_ O_ 
+B_ L_ B_ B_ B_ Lg L_ T_ L_ B_ P_ B_ L_ L_ L_ L_ F_ F_ B_ O_ 
+P_ B_ B_ B_ L_ L_ F_ Fg L_ P_ B_ L_ L_ L_ L_ L_ F_ B_ B_ O_ 
+O_ O_ O_ B_ B_ L_ Lg L_ L_ L_ L_ L_ L_ M_ L_ L_ P_ B_ O_ O_ 
+O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+O_ O_ O_ O_ O_ B_ B_ B_ L_ L_ L_ M_ L_ L_ B_ B_ O_ B_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ B_ M_ L_ L_ F_ L_ L_ B_ B_ O_ B_ B_ B_ 
+O_ B_ P_ B_ B_ O_ O_ B_ X_ Y_ L_ L_ Lg L_ L_ P_ O_ O_ O_ O_ 
+B_ P_ L_ L_ B_ B_ B_ B_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+B_ L_ L_ L_ L_ Lg B_ B_ B_ F_ L_ L_ L_ T_ L_ L_ B_ B_ L_ B_ 
+B_ L_ L_ L_ L_ X_ Y_ B_ P_ L_ L_ Lg L_ L_ L_ L_ L_ T_ F_ F_ 
+L_ L_ L_ M_ L_ L_ L_ F_ P_ B_ L_ L_ M_ L_ L_ L_ L_ L_ L_ M_ 
+B_ B_ P_ L_ L_ L_ L_ B_ B_ B_ B_ L_ L_ B_ B_ B_ L_ L_ L_ B_ 
+
+17
+         money             capital hab_pesca hab_esc hab_org pob score
+vikings      5  [(14, 8), (17, 5)]         0       2       1  11   670
+romans       9           [(0, 14)]         0       0       1   6   200
+chineese     6            [(6, 5)]         0       1       1   6   280
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Xg B_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ B_ Lg M_ Pg O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Lg Lg L_ Lg B_ B_ B_ B_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ Lg L_ L_ Lg L_ L_ F_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ L_ L_ L_ L_ M_ L_ L_ Lg T_ F_ B_ 
+O_ O_ O_ O_ Pg B_ B_ B_ B_ B_ B_ B_ L_ L_ L_ L_ L_ M_ B_ B_ 
+O_ O_ O_ O_ B_ Xg Lg Lg P_ O_ O_ P_ F_ L_ L_ Lg L_ B_ B_ O_ 
+B_ B_ B_ O_ B_ Mg L_ Lg B_ B_ O_ B_ L_ L_ L_ L_ F_ B_ B_ O_ 
+B_ L_ B_ B_ B_ L_ L_ T_ Lg B_ P_ B_ L_ L_ L_ L_ F_ F_ B_ O_ 
+P_ B_ B_ B_ L_ L_ Fg F_ L_ P_ B_ L_ L_ L_ L_ L_ F_ B_ B_ O_ 
+O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ M_ L_ L_ P_ B_ O_ O_ 
+O_ O_ O_ O_ B_ B_ L_ Lg L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+O_ O_ O_ O_ O_ B_ B_ B_ L_ L_ L_ M_ L_ L_ B_ B_ O_ B_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ B_ M_ L_ L_ Fg L_ L_ B_ B_ O_ B_ B_ B_ 
+O_ B_ P_ B_ B_ O_ O_ B_ X_ Y_ L_ L_ L_ L_ L_ P_ O_ O_ O_ O_ 
+B_ P_ L_ L_ B_ B_ B_ B_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+B_ L_ L_ L_ Lg L_ B_ B_ B_ F_ L_ L_ L_ T_ L_ L_ B_ B_ L_ B_ 
+B_ L_ L_ L_ L_ Xg Y_ B_ P_ L_ L_ L_ L_ L_ L_ L_ L_ T_ F_ F_ 
+L_ L_ L_ M_ L_ L_ L_ F_ P_ B_ Lg L_ M_ L_ L_ L_ L_ L_ L_ M_ 
+B_ B_ P_ L_ L_ L_ L_ B_ B_ B_ B_ L_ L_ B_ B_ B_ L_ L_ L_ B_ 
+
+18
+         money             capital hab_pesca hab_esc hab_org pob score
+vikings      8  [(14, 8), (17, 5)]         0       2       1  11   670
+romans      11           [(0, 14)]         0       0       1   6   200
+chineese     6            [(6, 5)]         0       1       1   6   290
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Xg B_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ B_ Lg M_ Pg O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ Lg L_ B_ B_ B_ B_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Lg L_ Lg Lg L_ L_ L_ F_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ L_ L_ Lg L_ M_ L_ Lg L_ T_ F_ B_ 
+O_ O_ O_ O_ Pg B_ B_ B_ B_ B_ B_ B_ L_ L_ L_ L_ L_ M_ B_ B_ 
+O_ O_ O_ O_ B_ Xg L_ L_ Pg O_ O_ P_ F_ L_ L_ L_ L_ B_ B_ O_ 
+B_ B_ B_ O_ B_ Mg Lg Lg B_ B_ O_ B_ L_ L_ Lg L_ F_ B_ B_ O_ 
+B_ L_ B_ B_ B_ Lg L_ T_ L_ B_ P_ B_ L_ L_ L_ L_ F_ F_ B_ O_ 
+P_ B_ B_ B_ L_ L_ F_ Fg L_ Pg B_ L_ L_ L_ L_ L_ F_ B_ B_ O_ 
+O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ M_ L_ L_ P_ B_ O_ O_ 
+O_ O_ O_ O_ B_ B_ L_ Lg L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+O_ O_ O_ O_ O_ B_ B_ B_ L_ L_ L_ M_ L_ L_ B_ B_ O_ B_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ B_ M_ L_ L_ F_ Lg L_ B_ B_ O_ B_ B_ B_ 
+O_ B_ P_ B_ B_ O_ O_ B_ X_ Y_ L_ L_ L_ L_ L_ P_ O_ O_ O_ O_ 
+B_ P_ L_ L_ B_ B_ B_ B_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+B_ L_ L_ L_ Lg L_ B_ B_ B_ F_ L_ L_ L_ T_ L_ L_ B_ B_ L_ B_ 
+B_ L_ L_ L_ L_ X_ Y_ B_ P_ L_ L_ L_ L_ L_ L_ L_ L_ T_ F_ F_ 
+L_ L_ L_ M_ Lg L_ L_ F_ P_ B_ Lg L_ M_ L_ L_ L_ L_ L_ L_ M_ 
+B_ B_ P_ L_ L_ L_ L_ B_ B_ B_ B_ L_ L_ B_ B_ B_ L_ L_ L_ B_ 
+
+19
+         money             capital hab_pesca hab_esc hab_org pob score
+vikings      9  [(14, 8), (17, 5)]         0       2       1  11   680
+romans      13           [(0, 14)]         0       0       1   6   200
+chineese     8            [(6, 5)]         0       1       1   6   290
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Xg B_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ B_ Lg M_ Pg O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ Lg Lg B_ B_ B_ B_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ Lg L_ L_ L_ Lg L_ F_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ L_ L_ L_ Lg M_ L_ L_ L_ T_ F_ B_ 
+O_ O_ O_ O_ Pg B_ B_ B_ B_ B_ B_ B_ Lg L_ L_ L_ L_ M_ B_ B_ 
+O_ O_ O_ O_ B_ Xg Lg L_ P_ O_ O_ P_ F_ L_ L_ L_ L_ B_ B_ O_ 
+B_ B_ B_ O_ B_ Mg L_ Lg B_ B_ O_ B_ L_ L_ L_ L_ F_ B_ B_ O_ 
+B_ L_ B_ B_ B_ L_ Lg Tg L_ B_ P_ B_ L_ L_ L_ Lg F_ F_ B_ O_ 
+P_ B_ B_ B_ L_ L_ F_ F_ Lg P_ B_ L_ L_ L_ L_ L_ F_ B_ B_ O_ 
+O_ O_ O_ B_ B_ L_ L_ L_ Lg L_ L_ L_ L_ M_ L_ L_ P_ B_ O_ O_ 
+O_ O_ O_ O_ B_ B_ L_ L_ Lg L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+O_ O_ O_ O_ O_ B_ B_ B_ L_ L_ L_ M_ L_ L_ B_ B_ O_ B_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ B_ M_ L_ L_ F_ L_ Lg B_ B_ O_ B_ B_ B_ 
+O_ B_ P_ B_ B_ O_ O_ B_ X_ Y_ L_ L_ L_ L_ L_ P_ O_ O_ O_ O_ 
+B_ P_ L_ L_ B_ B_ B_ B_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+B_ L_ L_ Lg L_ L_ B_ B_ B_ F_ L_ L_ L_ T_ L_ L_ B_ B_ L_ B_ 
+B_ L_ L_ Lg L_ Xg Y_ B_ P_ L_ L_ Lg L_ L_ L_ L_ L_ T_ F_ F_ 
+L_ L_ L_ M_ L_ L_ L_ F_ P_ B_ L_ L_ M_ L_ L_ L_ L_ L_ L_ M_ 
+B_ B_ P_ L_ L_ L_ L_ B_ B_ B_ B_ L_ L_ B_ B_ B_ L_ L_ L_ B_ 
+
+20
+         money             capital hab_pesca hab_esc hab_org pob score
+vikings      8  [(14, 8), (17, 5)]         0       2       1  13   720
+romans       4           [(0, 14)]         0       1       1   6   300
+chineese    10            [(6, 5)]         0       1       1   6   290
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Xg B_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ B_ L_ M_ P_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ Lg L_ Lg B_ B_ B_ B_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Lg L_ Lg L_ Lg Lg L_ F_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ L_ L_ Lg L_ M_ L_ L_ L_ T_ F_ B_ 
+O_ O_ O_ O_ Pg B_ B_ B_ B_ B_ B_ B_ L_ Lg L_ L_ L_ M_ B_ B_ 
+O_ O_ O_ O_ B_ Xg L_ L_ P_ O_ O_ P_ F_ L_ L_ L_ L_ B_ B_ O_ 
+B_ B_ B_ O_ B_ Mg Lg Lg B_ B_ O_ B_ L_ L_ L_ L_ F_ B_ B_ O_ 
+B_ L_ B_ B_ B_ L_ L_ Tg Lg B_ P_ B_ L_ L_ Lg L_ F_ F_ B_ O_ 
+P_ B_ B_ B_ L_ L_ F_ F_ L_ P_ B_ L_ L_ L_ L_ L_ F_ B_ B_ O_ 
+O_ O_ O_ B_ B_ L_ L_ Lg Lg Lg L_ L_ L_ M_ L_ L_ P_ B_ O_ O_ 
+O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+O_ O_ O_ O_ O_ B_ B_ B_ L_ L_ L_ M_ Lg L_ B_ B_ O_ B_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ B_ K_ L_ L_ F_ L_ L_ B_ B_ O_ B_ B_ B_ 
+O_ B_ P_ B_ B_ O_ O_ B_ X_ Y_ L_ L_ L_ L_ L_ P_ O_ O_ O_ O_ 
+B_ P_ L_ L_ B_ B_ B_ B_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+B_ L_ L_ L_ L_ L_ B_ B_ B_ F_ L_ L_ L_ T_ L_ L_ B_ B_ L_ B_ 
+B_ L_ Lg Lg L_ Xg Y_ B_ P_ L_ L_ L_ L_ L_ L_ L_ L_ T_ F_ F_ 
+L_ L_ L_ M_ L_ L_ L_ F_ P_ B_ L_ Lg M_ L_ L_ L_ L_ L_ L_ M_ 
+B_ B_ P_ L_ L_ L_ L_ B_ B_ B_ B_ L_ L_ B_ B_ B_ L_ L_ L_ B_ 
+
+21
+         money             capital hab_pesca hab_esc hab_org pob score
+vikings      8  [(14, 8), (17, 5)]         0       2       1  13   740
+romans       6           [(0, 14)]         0       1       1   6   300
+chineese    12            [(6, 5)]         0       1       1   6   290
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Xg B_ O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ B_ L_ M_ Pg O_ O_ O_ O_ 
+O_ O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ Lg L_ Lg L_ B_ B_ B_ B_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ B_ L_ L_ L_ L_ L_ L_ L_ F_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ O_ B_ L_ Lg L_ L_ M_ Lg Lg L_ T_ F_ B_ 
+O_ O_ O_ O_ Pg B_ B_ B_ B_ B_ B_ B_ Lg L_ Lg L_ L_ M_ B_ B_ 
+O_ O_ O_ O_ B_ Xg L_ L_ P_ O_ O_ P_ F_ L_ L_ L_ L_ B_ B_ O_ 
+B_ B_ B_ O_ B_ M_ Lg Lg B_ B_ O_ B_ L_ L_ L_ L_ F_ B_ B_ O_ 
+B_ L_ B_ B_ B_ Lg L_ Tg Lg B_ P_ B_ L_ L_ L_ L_ F_ F_ B_ O_ 
+P_ B_ B_ B_ L_ L_ F_ F_ Lg P_ B_ L_ L_ L_ Lg L_ F_ B_ B_ O_ 
+O_ O_ O_ B_ B_ L_ L_ L_ Lg L_ L_ L_ L_ M_ L_ L_ P_ B_ O_ O_ 
+O_ O_ O_ O_ B_ B_ L_ Lg L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+O_ O_ O_ O_ O_ B_ B_ B_ L_ L_ L_ Mg L_ L_ B_ B_ O_ B_ L_ B_ 
+O_ O_ O_ O_ O_ O_ O_ B_ K_ L_ L_ F_ L_ L_ B_ B_ O_ B_ B_ B_ 
+O_ B_ P_ B_ B_ O_ O_ B_ Xg Y_ L_ L_ L_ L_ L_ P_ O_ O_ O_ O_ 
+B_ P_ L_ L_ B_ B_ B_ B_ L_ L_ L_ L_ L_ L_ L_ B_ B_ B_ B_ P_ 
+B_ L_ L_ L_ Lg L_ B_ B_ B_ F_ L_ L_ L_ T_ L_ L_ B_ B_ L_ B_ 
+B_ L_ L_ L_ L_ Xg Y_ B_ P_ L_ Lg L_ L_ L_ L_ L_ L_ T_ F_ F_ 
+L_ Lg L_ Mg L_ L_ L_ F_ P_ B_ L_ L_ M_ L_ L_ L_ L_ L_ L_ M_ 
+B_ B_ P_ L_ L_ L_ L_ B_ B_ B_ B_ L_ L_ B_ B_ B_ L_ L_ L_ B_ 
+

@@ -12,7 +12,7 @@ class Action():
 class Civilization():
     #players es una lista de jugadores
     def __init__(self, players) -> None:
-        self.map = map(10,10,0.55,0.9,0.98,0.95,0.89,0.87)# cambiar estos numeros
+        self.map = map(10,10,0.6)
         self.game_over = False
         self.players = players
         self.turn = 0
@@ -214,7 +214,7 @@ class Civilization():
         puntuacion=0
         inv=(1-2*revierte)
         current_player = self.players[self.actual_player]
-
+        """
         if revierte:
             if self.map.map[sold1_x,sold1_y].soldado==None:
                 if current_player.civilization == self.map.map[sold2_x,sold2_y].soldado.civilization:
@@ -230,21 +230,15 @@ class Civilization():
                     self.map.map[sold1_x,sold1_y].soldado=self.deads.pop()
                     current_player.soldados.append(self.map.map[sold1_x,sold1_y].soldado)
                     puntuacion=self.map.map[sold1_x,sold1_y].soldado.costo*5
-        else:
-            if self.map.map[sold2_x,sold2_y].soldado.vida<=self.map.map[sold1_x,sold1_y].soldado.ataque:
-                for i in self.players:
-                    if i.civilization==self.map.map[sold2_x,sold2_y].soldado.civilization and ejecuta:
-                        i.puntuacion-=self.map.map[sold2_x,sold2_y].soldado.costo*5
-
-            elif self.map.map[sold1_x,sold1_y].soldado.vida <= self.map.map[sold2_x,sold2_y].soldado.contraataque:
-                puntuacion=-self.map.map[sold1_x,sold1_y].soldado.costo*5
+        """
         if ejecuta:
             self.map.map[sold1_x,sold1_y].soldado.energy=not revierte
-            self.map.map[sold2_x,sold2_y].soldado.vida-= self.map.map[sold1_x,sold1_y].soldado.ataque*inv
+            self.map.map[sold2_x,sold2_y].soldado.vida-= self.map.map[sold1_x,sold1_y].soldado.ataque_method(self.map.map)*inv
             if self.map.map[sold2_x,sold2_y].soldado.vida>0:
-                if not revierte or  self.map.map[sold2_x,sold2_y].soldado.vida > self.map.map[sold1_x,sold1_y].soldado.ataque:
-                    self.map.map[sold1_x,sold1_y].soldado.vida -= self.map.map[sold2_x,sold2_y].soldado.contraataque*inv
+                if not revierte or  self.map.map[sold2_x,sold2_y].soldado.vida > self.map.map[sold1_x,sold1_y].soldado.ataque_method(self.map.map):
+                    self.map.map[sold1_x,sold1_y].soldado.vida -= self.map.map[sold2_x,sold2_y].soldado.contraataque_method(self.map.map)*inv
                 if self.map.map[sold1_x,sold1_y].soldado.vida<=0:
+                    puntuacion-=self.map.map[sold1_x,sold1_y].soldado.costo*5
                     self.deads.append(self.map.map[sold1_x,sold1_y].soldado)
                     for i in self.players:
                         if i.civilization == self.map.map[sold1_x,sold1_y].soldado.civilization:
@@ -255,12 +249,21 @@ class Civilization():
                 for i in self.players:
                     if i.civilization == self.map.map[sold2_x,sold2_y].soldado.civilization:
                         i.soldados.remove(self.map.map[sold2_x,sold2_y].soldado)
+                        i.puntuacion-=self.map.map[sold2_x,sold2_y].soldado.costo*5
                 self.map.map[sold2_x,sold2_y].soldado = self.map.map[sold1_x,sold1_y].soldado
                 self.map.map[sold1_x,sold1_y].soldado = None
 
                 self.map.map[sold2_x,sold2_y].soldado.row=sold2_x
                 self.map.map[sold2_x,sold2_y].soldado.col=sold2_y
             current_player.puntuacion+=puntuacion
+        else:
+            if self.map.map[sold2_x,sold2_y].soldado.vida<=self.map.map[sold1_x,sold1_y].soldado.ataque_method(self.map.map):
+                for i in self.players:
+                    if i.civilization==self.map.map[sold2_x,sold2_y].soldado.civilization and ejecuta:
+                        i.puntuacion-=self.map.map[sold2_x,sold2_y].soldado.costo*5
+
+            elif self.map.map[sold1_x,sold1_y].soldado.vida <= self.map.map[sold2_x,sold2_y].soldado.contraataque_method(self.map.map):
+                puntuacion=-self.map.map[sold1_x,sold1_y].soldado.costo*5
         return puntuacion
 
     def desarrollar_habilidades(self, i,j,ejecuta=False,revierte=False):

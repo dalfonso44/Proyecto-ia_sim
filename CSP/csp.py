@@ -3,7 +3,7 @@ from itertools import count
 from operator import eq, neg
 from sortedcontainers import SortedSet
 import random
-from ..Search import search
+from Search import search
 
 
 def count(seq):
@@ -20,7 +20,7 @@ class CSP(search.Problem):
         - variables : A list of variables; each is atomic
         - domains : A dict { var : [posible_values]}
         - neighbors : A dict {var: [var_2,...,var_n]} if var and var_i participate in the same constraint
-        - constainst : A function f(A,A,B,b) that return true if neighbors A, B 
+        - constainst : A function f(A,a,B,b) that return true if neighbors A, B 
         satisfy the constraint when A=a, B=b
     """
     def __init__(self,variables,domains,neighbors,constraints) -> None:
