@@ -198,10 +198,22 @@ class Civilization():
         return (280+20*self.map.map[city_row,city_col].poblacion)*(1-2*revierte)
 
 
-    def move(self,current_x, current_y, new_x, new_y,ejecuta=False,revierte=False):        
+    def move(self,current_x, current_y, new_x, new_y,ejecuta=False,revierte=False): 
+        current_player = self.players[self.actual_player]
         if revierte and ejecuta:
             return self.move(new_x,new_y,current_x,current_y,ejecuta)
         if ejecuta:
+            insp = self.map.map[current_x,current_y].soldado.inspiracion_method(self.map.map)[0]
+            if insp >=5:
+                for j,k in zip(dr,dc):
+                    if current_x+j<0 or current_x+j>=self.map.map.shape[0] or current_y+k<0 or current_y+k>=self.map.map.shape[1]:
+                        continue
+                    if accesible(self.map.map[current_x,current_y], self.map.map[current_x+j,current_y+k],current_player.habilidades):
+                        if self.map.map[current_x+j,current_y+k].soldado == None:
+                            new_x = current_x + j
+                            new_y = current_y+k
+                            break
+                        
             self.map.map[new_x,new_y].soldado=self.map.map[current_x,current_y].soldado
             if current_x!=new_x or current_y!=new_y:
                 self.map.map[current_x,current_y].soldado=None

@@ -182,8 +182,8 @@ class Soldado:
     dc =[-1,1,0,0,1,-1,-1,1]
     
     def inspiracion_method(self, mapa):
-        panic = 0
-        insp = 0
+        panic = 1
+        insp = 1
         for i,j in zip(dr,dc):
             if self.row+i<0 or self.row+i>=mapa.shape[0] or self.col+j<0 or self.col+j>=mapa.shape[1]:
                 continue
@@ -207,16 +207,16 @@ class Soldado:
         elif mapa[self.row,self.col].__class__ in self.incomodidad:
             panic+=0.5
 
-        return tuple(max(min(5,int(i)),1) for i in (insp*self.inspiracion,panic*self.panico)) 
+        return (insp*self.inspiracion,panic*self.panico)
 
 
     def ataque_method(self,mapa):
         medidas = self.inspiracion_method(mapa)
-        return random.randint(self.ataque-medidas[1], self.ataque+medidas[0])
+        return max(0,random.randint(self.ataque-medidas[1], self.ataque+medidas[0]))
 
     def contraataque_method(self,mapa):
         medidas = self.inspiracion_method(mapa)
-        return random.randint(self.contraataque-medidas[1], self.contraataque+medidas[0])
+        return max(0,random.randint(self.contraataque-medidas[1], self.contraataque+medidas[0]))
 
     def recibe_ataque(self,atacante, mapa):
         self.vida -= atacante.ataque
