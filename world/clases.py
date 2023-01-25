@@ -4,7 +4,7 @@ from world_ import *
 
 
 class environment_things():
-    def __init__(self,cord_x = None, cord_y =None ):
+    def __init__(self,cord_x = None, cord_y =None, soldado = None ):
         self.soldado = None   
         self.x = cord_x
         self.y = cord_y

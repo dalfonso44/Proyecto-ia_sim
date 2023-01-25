@@ -34,7 +34,7 @@ class map(CSP):
         self.civilizations = civilizations
 
         self.map = np.ndarray((size_x,size_y), dtype = environment_things)
-        self.map.fill(environment_things)
+        self.map.fill(environment_things())
 
         cities = self.build_cities(civilizations)
 
@@ -44,12 +44,22 @@ class map(CSP):
         #domain = [2,3,4,5,6,7,8,9,10,11,12]
         domains = UniversalDict(domain)
 
-        m =CSP(list(neighbors.keys()), domains,neighbors, myMapConstraint)
+        empty_cells = []
+
+        m =CSP(list(neighbors.keys()), domains,neighbors, all_diff_constraint)
         assignments = backtracking_search(m)
+        fill_cells = assignments.keys()
         for assignmnent in assignments:
             value = assignments[assignmnent]
             x,y = assignmnent
             self.map[x,y] = value
+
+        for i in range(self.map.shape[0]):
+            for j in range(self.map.shape[1]):
+                if (i,j) not in fill_cells:
+                    self.map[i,j] =  domain[random.randint(0,len(domain)-1)]   
+
+
 
 
 
@@ -91,6 +101,8 @@ class map(CSP):
 
                     
                 
+                
+
 
                 if self.map[i,j].soldado == None:
                     s+='_ '
@@ -123,57 +135,46 @@ class map(CSP):
 
     def agroup_neighbors(self,cities):
         # solo participan en la restriccion los alrededores de las ciudades
-        def buscar_posiciones_aledanas(x,y,cantidad):
-            domain = [town(), beach(), ocean(),mountain(),plain(),port(),fish(),mine(),farm(),fruits(), planting()]
+        def buscar_posiciones_aledanas(x,y,cantidad,taken,result):
+            if cantidad == 0:return
             dx = np.array([-1,1,0,0,-1,1,-1,1]) #up down left right diag izq diag der
             dy = np.array([0,0,-1,1,-1,-1,1,1])  
-            result = []
+            
             for i in range(len(dx)):
-                if cantidad == 0: break
+                if cantidad[0] == 0: break
                 new_x = dx[i] +x
                 new_y= dy[i] + y
                 if new_x > 0 and new_y > 0 and new_x < self.map.shape[0] and new_y < self.map.shape[0]:
-                    if not isinstance(self.map[new_x, new_y], city) and not isinstance(self.map[new_x,new_y], ocean) :
+                    if not isinstance(self.map[new_x, new_y], ocean) and not isinstance(self.map[new_x, new_y], city) and (new_x,new_y) not in taken :
                         result.append((new_x,new_y))
-                        self.map[new_x,new_y] = ocean # ya esta marcado
-                        x = new_x
-                        y = new_y
-                        cantidad -=1 
-            return result               
+                        self.map[new_x,new_y] = ocean() # ya esta marcado
+                        cantidad[0] = cantidad[0] -1
+                        buscar_posiciones_aledanas(new_x,new_y,cantidad,taken,result)    
+            return   
 
                 
                 
 
         neighbors = defaultdict(list)
         variables = []
+        taken = []
         for cty in cities:
             x = cty.row
             y = cty.col
             # las posiciones del asentaminto
-            r = random.randint(1,5)
-            setlement_pos = buscar_posiciones_aledanas(x,y,r)
+            r = random.randint(5,10)
+            setlement_pos = [] 
+            cant = [10]
+            buscar_posiciones_aledanas(x,y,cant,taken,setlement_pos)
+            
             for p in setlement_pos:
+                taken.append(p)
                 for q in setlement_pos:
                     if p!=q:
-                        neighbors[p].append(q)
+                        neighbors[p].append(q)            
         return neighbors        
 
 
-
-    # def generation_world_csp(self):
-    #     world = np.full((self.size_x,self.size_y),environment_things(), dtype = environment_things)
-    #     neighbors = self.parse_neighbors(world)
-    #     world = self.make_zones(world,self.players) # reparte las ciudades de las civilizaciones
-        
-    #     #d = CivilizationDict()
-    #     map_csp = CSP(list(self.neighbors.keys()), self.domains,self.neighbors, myMapConstraint)  
-    #     assignments = backtracking_search(map_csp)
-    #     for cell in assignments.keys():
-    #         x = cell.x
-    #         y = cell.y
-    #         world[x,y] = assignments[cell]
-
-    #     return world 
 
 
 # probando el mapa
