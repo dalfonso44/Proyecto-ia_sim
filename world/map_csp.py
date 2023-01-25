@@ -49,15 +49,27 @@ class map(CSP):
         m =CSP(list(neighbors.keys()), domains,neighbors, all_diff_constraint)
         assignments = backtracking_search(m)
         fill_cells = assignments.keys()
+        cities_pos = []
+        for c in cities :
+            x = c.row
+            y = c.col
+            cities_pos.append((x,y))
+
         for assignmnent in assignments:
             value = assignments[assignmnent]
             x,y = assignmnent
             self.map[x,y] = value
 
+          
+
         for i in range(self.map.shape[0]):
             for j in range(self.map.shape[1]):
-                if (i,j) not in fill_cells:
+                if (i,j) not in fill_cells and (i,j) not in cities_pos:
                     self.map[i,j] =  domain[random.randint(0,len(domain)-1)]   
+
+        
+
+               
 
 
 
