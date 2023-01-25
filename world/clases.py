@@ -184,8 +184,8 @@ class Soldado:
     dc =[-1,1,0,0,1,-1,-1,1]
     
     def inspiracion_method(self, mapa):
-        panic = 0
-        insp = 0
+        panic = 1
+        insp = 1
         for i,j in zip(dr,dc):
             if self.row+i<0 or self.row+i>=mapa.shape[0] or self.col+j<0 or self.col+j>=mapa.shape[1]:
                 continue
@@ -209,16 +209,36 @@ class Soldado:
         elif mapa[self.row,self.col].__class__ in self.incomodidad:
             panic+=0.5
 
-        return tuple(max(min(5,int(i)),1) for i in (insp*self.inspiracion,panic*self.panico)) 
+        return (int(insp*self.inspiracion),int(panic*self.panico))
 
+    def available_move(self, civ):
+        moves=[]
+        current_player = civ.players[civ.actual_player]
+        if not self.energy:
+            return moves 
+        for j,k in zip(dr,dc):
+                if self.row+j<0 or self.row+j>=civ.map.map.shape[0] or self.col+k<0 or self.col+k>=civ.map.map.shape[1]:
+                    continue
+                if civ.accesible(civ.map.map[self.row,self.col], civ.map.map[self.row+j,self.col+k],current_player.habilidades):
+                    if civ.map.map[self.row+j,self.col+k].soldado != None and civ.map.map[self.row+j,self.col+k].soldado.civilization !=current_player.civilization:
+                        moves.append('fight(*'+str((self.row,self.col,self.row+j,self.col+k))+')')
+                    if civ.map.map[self.row+j,self.col+k].soldado == None:
+                        moves.append('move(*'+str((self.row,self.col,self.row+j,self.col+k))+')')
+        return moves
+    
+    def play(self,civ):
+        move = self.available_move(civ)
+        if move==[]:
+            return 0 
+        return eval("civ."+random.choice(move)[:-1]+",True)") 
 
     def ataque_method(self,mapa):
         medidas = self.inspiracion_method(mapa)
-        return random.randint(self.ataque-medidas[1], self.ataque+medidas[0])
+        return max(0,random.randint(self.ataque-medidas[1], self.ataque+medidas[0]))
 
     def contraataque_method(self,mapa):
         medidas = self.inspiracion_method(mapa)
-        return random.randint(self.contraataque-medidas[1], self.contraataque+medidas[0])
+        return max(0,random.randint(self.contraataque-medidas[1], self.contraataque+medidas[0]))
 
     def recibe_ataque(self,atacante, mapa):
         self.vida -= atacante.ataque

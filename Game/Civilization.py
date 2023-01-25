@@ -99,7 +99,18 @@ class Civilization():
                     
 
     dr =[0,0,1,-1,1,1,-1,-1]
-    dc =[-1,1,0,0,1,-1,-1,1]
+    dc =[-1,1,0,0,1,-1,-1,1]         #   insp = self.map.map[current_x,current_y].soldado.inspiracion_method(self.map.map)[0]
+         #   if insp >=5:
+         #       for j,k in zip(dr,dc):
+         #           if current_x+j<0 or current_x+j>=self.map.map.shape[0] or current_y+k<0 or current_y+k>=self.map.map.shape[1]:
+         #               continue
+         #           if accesible(self.map.map[current_x,current_y], self.map.map[current_x+j,current_y+k],current_player.habilidades):
+         #               if self.map.map[current_x+j,current_y+k].soldado == None:
+         #                   new_x = current_x + j
+         #                   new_y = current_y+k
+         #                   break
+                        
+
 
     def avaiable_moves(self,current_player):
         actions = ['termina(0)']
@@ -115,7 +126,7 @@ class Civilization():
             for j,k in zip(dr,dc):
                 if i.row+j<0 or i.row+j>=self.map.map.shape[0] or i.col+k<0 or i.col+k>=self.map.map.shape[1]:
                     continue
-                if accesible(self.map.map[i.row,i.col], self.map.map[i.row+j,i.col+k],current_player.habilidades):
+                if self.accesible(self.map.map[i.row,i.col], self.map.map[i.row+j,i.col+k],current_player.habilidades):
                     if self.map.map[i.row+j,i.col+k].soldado != None and self.map.map[i.row+j,i.col+k].soldado.civilization !=current_player.civilization:
                         actions.append('fight(*'+str((i.row,i.col,i.row+j,i.col+k))+')')
                     if self.map.map[i.row+j,i.col+k].soldado == None:
@@ -155,8 +166,13 @@ class Civilization():
                             actions.append('construir(*'+str((c.row+i,c.col+j,c.row,c.col,estructure))+')')
         return actions
 
+    def juega_inspirados(self):
+        current_player = self.players[self.actual_player]
+        return sum(sol.play(self) for sol in current_player.soldados if sol.inspiracion_method(self.map.map)[0]>=5)       
+
     def tomar_pueblo(self,town_row, town_col,ejecuta=False,revierte=False):
         current_player = self.players[self.actual_player]
+        p=0
         if revierte and ejecuta:
             self.ciudades.remove(self.map.map[town_row,town_col])
             sold=self.map.map[town_row,town_col].soldado
@@ -171,9 +187,11 @@ class Civilization():
             self.map.map[town_row,town_col].soldado.energy = False
         if ejecuta:
             current_player.puntuacion += 280 * (1-2*revierte)
-        return 280 * (1-2*revierte)
+            p=self.juega_inspirados()
+        return (280+p) * (1-2*revierte)
 
     def tomar_ciudad(self,city_row, city_col,ejecuta=False,revierte=False):
+        p=0
         current_player = self.players[self.actual_player]
         if revierte and ejecuta:
             self.map.map[city_row,city_col].soldado.energy=True
@@ -194,11 +212,14 @@ class Civilization():
         
         if ejecuta:
             current_player.puntuacion += (280+20*self.map.map[city_row,city_col].poblacion)*(1-2*revierte)
-        
-        return (280+20*self.map.map[city_row,city_col].poblacion)*(1-2*revierte)
+            p=self.juega_inspirados()
 
 
-    def move(self,current_x, current_y, new_x, new_y,ejecuta=False,revierte=False):        
+        return (280+p+20*self.map.map[city_row,city_col].poblacion)*(1-2*revierte)
+
+
+    def move(self,current_x, current_y, new_x, new_y,ejecuta=False,revierte=False): 
+        p=0
         if revierte and ejecuta:
             return self.move(new_x,new_y,current_x,current_y,ejecuta)
         if ejecuta:
@@ -208,7 +229,9 @@ class Civilization():
                 self.map.map[new_x,new_y].soldado.row=new_x
                 self.map.map[new_x,new_y].soldado.col=new_y
                 self.map.map[new_x,new_y].soldado.energy=revierte
-        return 0
+            p=self.juega_inspirados()
+        
+        return p
 
     def fight(self,sold1_x,sold1_y,sold2_x,sold2_y,ejecuta=False, revierte = False):
         puntuacion=0
@@ -255,6 +278,7 @@ class Civilization():
 
                 self.map.map[sold2_x,sold2_y].soldado.row=sold2_x
                 self.map.map[sold2_x,sold2_y].soldado.col=sold2_y
+            puntuacion += self.juega_inspirados()
             current_player.puntuacion+=puntuacion
         else:
             if self.map.map[sold2_x,sold2_y].soldado.vida<=self.map.map[sold1_x,sold1_y].soldado.ataque_method(self.map.map):
@@ -276,6 +300,7 @@ class Civilization():
         return 100* (1-2*revierte)
 
     def entrenar(self,soldado,city_x,city_y,ejecuta=False, revierte =False):
+        p=0
         current_player = self.players[self.actual_player]
         if revierte and ejecuta:
             current_player.soldados.remove(self.map.map[city_x,city_y].soldado)
@@ -289,8 +314,8 @@ class Civilization():
             current_player.soldados.append(new_soldier)
         if ejecuta:
             current_player.puntuacion += self.precios_guerreros[soldado]*5* (1-2*revierte)
-
-        return self.precios_guerreros[soldado]*5* (1-2*revierte)
+            p = self.juega_inspirados()
+        return (p + self.precios_guerreros[soldado]*5)* (1-2*revierte)
 
     def construir(self,pos_x,pos_y,city_x,city_y,const,ejecuta=False, revierte = False):
         c=eval(const)()
@@ -324,16 +349,16 @@ class Civilization():
                                 h.precio+=1
         return 0
 
-def accesible(position, new_position, habilidades):
-    if(not habilidades[1][0].desbloqueada) and new_position.__class__ is mountain:
-        return False
-    if(not habilidades[0][2].desbloqueada) and new_position.__class__ is ocean:
-        return False
-    if new_position.__class__ is port:  
+    def accesible(self,position, new_position, habilidades):
+        if(not habilidades[1][0].desbloqueada) and new_position.__class__ is mountain:
+            return False
+        if(not habilidades[0][2].desbloqueada) and new_position.__class__ is ocean:
+            return False
+        if new_position.__class__ is port:  
+            return True
+        if new_position.__class__ is beach and not (position.__class__ is beach or position.__class__ is ocean):  
+            return False
         return True
-    if new_position.__class__ is beach and not (position.__class__ is beach or position.__class__ is ocean):  
-        return False
-    return True
 
 
                 
