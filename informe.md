@@ -77,6 +77,21 @@ Monte Carlo realiza la acción si el aumento de la heurística que ella provoca 
 ## Monte Carlo Deep
 Este jugador hace lo mismo que el jugador de Monte Carlo simple pero analizando varias jugadas en profundidad.
 
+## Resultados y conclusiones
+Se realizaron 169 simulaciones.   
+Las puntuaciones medias fueron:
+* para el jugador de MCTS: 1254.053254 
+* para el jugador de MC: 826.124260
+* para el jugador aleatorio: 231.005917  
+
+Los juegos ganados por jugadores fueron:
+* para el jugador de MCTS: 109.5 
+* para el jugador de MC: 47.5
+* para el jugador aleatorio: 12.0
+
+Podemos concluir que el mejor jugador es el que implementa un Monte Carlo Tree Search. Sin embargo el jugador de Monte Carlo Simple también obtiene resultados muy buenos.
+
+
 
 
 

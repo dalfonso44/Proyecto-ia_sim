@@ -1,0 +1,511 @@
+0
+         money   capital hab_pesca hab_esc hab_org pob score
+vikings      3  [(3, 2)]         0       0       0   6     0
+romans       3  [(8, 4)]         0       0       0   6     0
+chineese     3  [(0, 3)]         0       0       0   6     0
+O_ B_ P_ X_ P_ O_ O_ O_ O_ O_ 
+O_ B_ M_ F_ B_ O_ O_ O_ O_ O_ 
+O_ B_ F_ F_ P_ O_ O_ O_ O_ O_ 
+O_ P_ X_ M_ P_ O_ O_ O_ O_ O_ 
+B_ P_ F_ M_ B_ P_ O_ O_ O_ O_ 
+B_ F_ L_ L_ L_ B_ O_ O_ O_ O_ 
+B_ M_ L_ M_ F_ B_ P_ B_ B_ B_ 
+P_ T_ L_ F_ F_ M_ B_ F_ T_ B_ 
+P_ M_ M_ F_ X_ F_ F_ L_ F_ P_ 
+P_ B_ P_ B_ P_ F_ F_ M_ P_ B_ 
+
+1
+         money   capital hab_pesca hab_esc hab_org pob score
+vikings      5  [(3, 2)]         0       0       0   6     0
+romans       3  [(8, 4)]         0       0       0   6    10
+chineese     5  [(0, 3)]         0       0       0   6     0
+O_ B_ P_ X_ P_ O_ O_ O_ O_ O_ 
+O_ B_ M_ F_ B_ O_ O_ O_ O_ O_ 
+O_ B_ F_ F_ P_ O_ O_ O_ O_ O_ 
+O_ P_ X_ M_ P_ O_ O_ O_ O_ O_ 
+B_ P_ F_ M_ B_ P_ O_ O_ O_ O_ 
+B_ F_ L_ L_ L_ B_ O_ O_ O_ O_ 
+B_ M_ L_ M_ F_ B_ P_ B_ B_ B_ 
+P_ T_ L_ F_ F_ M_ B_ F_ T_ B_ 
+P_ M_ M_ F_ Xg F_ F_ L_ F_ P_ 
+P_ B_ P_ B_ P_ F_ F_ M_ P_ B_ 
+
+2
+         money   capital hab_pesca hab_esc hab_org pob score
+vikings      7  [(3, 2)]         0       0       0   6     0
+romans       3  [(8, 4)]         0       0       0   6    20
+chineese     5  [(0, 3)]         0       0       0   6    10
+O_ B_ P_ Xg P_ O_ O_ O_ O_ O_ 
+O_ B_ M_ F_ B_ O_ O_ O_ O_ O_ 
+O_ B_ F_ F_ P_ O_ O_ O_ O_ O_ 
+O_ P_ X_ M_ P_ O_ O_ O_ O_ O_ 
+B_ P_ F_ M_ B_ P_ O_ O_ O_ O_ 
+B_ F_ L_ L_ L_ B_ O_ O_ O_ O_ 
+B_ M_ L_ M_ F_ B_ P_ B_ B_ B_ 
+P_ T_ L_ F_ Fg M_ B_ F_ T_ B_ 
+P_ M_ M_ F_ Xg F_ F_ L_ F_ P_ 
+P_ B_ P_ B_ P_ F_ F_ M_ P_ B_ 
+
+3
+         money   capital hab_pesca hab_esc hab_org pob score
+vikings      4  [(3, 2)]         1       0       0   6   100
+romans       3  [(8, 4)]         0       0       0   6    30
+chineese     5  [(0, 3)]         0       0       0   6    20
+O_ B_ P_ Xg Pg O_ O_ O_ O_ O_ 
+O_ B_ M_ F_ B_ O_ O_ O_ O_ O_ 
+O_ B_ F_ F_ P_ O_ O_ O_ O_ O_ 
+O_ P_ X_ M_ P_ O_ O_ O_ O_ O_ 
+B_ P_ F_ M_ B_ P_ O_ O_ O_ O_ 
+B_ F_ L_ L_ L_ B_ O_ O_ O_ O_ 
+B_ M_ L_ M_ Fg B_ P_ B_ B_ B_ 
+P_ T_ L_ F_ F_ M_ B_ F_ T_ B_ 
+P_ M_ M_ Fg Xg F_ F_ L_ F_ P_ 
+P_ B_ P_ B_ P_ F_ F_ M_ P_ B_ 
+
+4
+         money   capital hab_pesca hab_esc hab_org pob score
+vikings      4  [(3, 2)]         1       0       0   7   120
+romans       3  [(8, 4)]         0       0       0   6    40
+chineese     7  [(0, 3)]         0       0       0   6    20
+O_ B_ P_ Xg P_ O_ O_ O_ O_ O_ 
+O_ B_ M_ Fg B_ O_ O_ O_ O_ O_ 
+O_ B_ F_ F_ P_ O_ O_ O_ O_ O_ 
+O_ P_ X_ M_ P_ O_ O_ O_ O_ O_ 
+B_ B_ F_ M_ B_ P_ O_ O_ O_ O_ 
+B_ F_ L_ Lg L_ B_ O_ O_ O_ O_ 
+B_ M_ L_ M_ F_ B_ P_ B_ B_ B_ 
+P_ T_ L_ F_ Fg M_ B_ F_ T_ B_ 
+P_ M_ M_ F_ Xg F_ F_ L_ F_ P_ 
+P_ B_ P_ B_ P_ Fg F_ M_ P_ B_ 
+
+5
+         money   capital hab_pesca hab_esc hab_org pob score
+vikings      4  [(3, 2)]         1       0       0   7   130
+romans       3  [(8, 4)]         0       0       0   6    50
+chineese     3  [(0, 3)]         0       0       1   6   120
+O_ B_ P_ Xg P_ O_ O_ O_ O_ O_ 
+O_ B_ M_ F_ B_ O_ O_ O_ O_ O_ 
+O_ B_ F_ Fg P_ O_ O_ O_ O_ O_ 
+O_ P_ Xg M_ P_ O_ O_ O_ O_ O_ 
+B_ B_ F_ M_ B_ P_ O_ O_ O_ O_ 
+B_ F_ L_ L_ L_ B_ O_ O_ O_ O_ 
+B_ M_ L_ M_ Fg B_ P_ B_ B_ B_ 
+P_ T_ L_ F_ Fg M_ B_ F_ T_ B_ 
+P_ M_ M_ Fg Xg F_ F_ L_ F_ P_ 
+P_ B_ P_ B_ Pg F_ F_ M_ P_ B_ 
+
+6
+         money   capital hab_pesca hab_esc hab_org pob score
+vikings      4  [(3, 2)]         1       0       0   7   140
+romans       3  [(8, 4)]         0       0       0   6    60
+chineese     5  [(0, 3)]         0       0       1   6   120
+O_ B_ P_ X_ P_ O_ O_ O_ O_ O_ 
+O_ B_ M_ Fg B_ O_ O_ O_ O_ O_ 
+O_ B_ Fg F_ P_ O_ O_ O_ O_ O_ 
+O_ P_ Xg M_ Pg O_ O_ O_ O_ O_ 
+B_ B_ F_ M_ B_ P_ O_ O_ O_ O_ 
+B_ F_ L_ L_ L_ B_ O_ O_ O_ O_ 
+B_ M_ L_ M_ F_ B_ P_ B_ B_ B_ 
+P_ T_ Lg Fg Fg M_ B_ F_ T_ B_ 
+P_ M_ M_ F_ Xg Fg F_ L_ F_ P_ 
+P_ B_ P_ B_ P_ Fg F_ M_ P_ B_ 
+
+7
+         money   capital hab_pesca hab_esc hab_org pob score
+vikings      4  [(3, 2)]         1       0       0   8   160
+romans       5  [(8, 4)]         0       0       0   6    60
+chineese     3  [(0, 3)]         0       0       1   7   150
+O_ B_ P_ Xg P_ O_ O_ O_ O_ O_ 
+O_ B_ M_ Y_ B_ O_ O_ O_ O_ O_ 
+O_ B_ F_ Fg Pg O_ O_ O_ O_ O_ 
+O_ B_ Xg M_ P_ O_ O_ O_ O_ O_ 
+B_ B_ Fg M_ B_ P_ O_ O_ O_ O_ 
+B_ F_ L_ L_ L_ B_ O_ O_ O_ O_ 
+B_ M_ L_ M_ F_ B_ P_ B_ B_ B_ 
+P_ Tg L_ Fg Fg M_ B_ F_ T_ B_ 
+P_ M_ M_ Fg Xg Fg F_ L_ F_ P_ 
+P_ B_ P_ B_ P_ F_ F_ M_ P_ B_ 
+
+8
+         money           capital hab_pesca hab_esc hab_org pob score
+vikings      6          [(3, 2)]         1       0       0   8   160
+romans       6  [(8, 4), (7, 1)]         0       0       0   9   350
+chineese     3          [(0, 3)]         0       0       1   7   160
+O_ B_ P_ Xg Pg O_ O_ O_ O_ O_ 
+O_ B_ M_ Yg B_ O_ O_ O_ O_ O_ 
+O_ B_ F_ F_ P_ O_ O_ O_ O_ O_ 
+O_ B_ Xg M_ Pg O_ O_ O_ O_ O_ 
+B_ B_ F_ M_ B_ P_ O_ O_ O_ O_ 
+B_ Fg L_ L_ L_ B_ O_ O_ O_ O_ 
+B_ M_ L_ M_ Fg B_ P_ B_ B_ B_ 
+P_ Xg L_ Fg Fg M_ B_ F_ T_ B_ 
+P_ M_ M_ F_ Xg F_ F_ L_ F_ P_ 
+P_ B_ P_ B_ Pg Fg F_ M_ P_ B_ 
+
+9
+         money           capital hab_pesca hab_esc hab_org pob score
+vikings      8          [(3, 2)]         1       0       0   8   160
+romans       7  [(8, 4), (7, 1)]         0       0       0   9   360
+chineese     5          [(0, 3)]         0       0       1   7   160
+O_ B_ Pg Xg Pg O_ O_ O_ O_ O_ 
+O_ B_ M_ Y_ B_ O_ O_ O_ O_ O_ 
+O_ B_ F_ F_ Pg O_ O_ O_ O_ O_ 
+O_ B_ X_ M_ P_ O_ O_ O_ O_ O_ 
+B_ B_ Fg M_ B_ P_ O_ O_ O_ O_ 
+B_ Fg L_ L_ L_ B_ O_ O_ O_ O_ 
+B_ M_ Lg M_ F_ B_ P_ B_ B_ B_ 
+Pg Xg L_ F_ Fg M_ B_ F_ T_ B_ 
+P_ M_ M_ Fg Xg F_ F_ L_ F_ P_ 
+P_ B_ P_ B_ Pg F_ Fg M_ P_ B_ 
+
+10
+         money           capital hab_pesca hab_esc hab_org pob score
+vikings     10          [(3, 2)]         1       0       0   8   160
+romans      10  [(8, 4), (7, 1)]         0       0       0   9   360
+chineese     7          [(0, 3)]         0       0       1   7   160
+O_ B_ P_ Xg Pg O_ O_ O_ O_ O_ 
+O_ B_ M_ Yg B_ O_ O_ O_ O_ O_ 
+O_ B_ F_ Fg P_ O_ O_ O_ O_ O_ 
+O_ B_ X_ M_ P_ O_ O_ O_ O_ O_ 
+B_ B_ F_ M_ B_ P_ O_ O_ O_ O_ 
+B_ Fg L_ Lg L_ B_ O_ O_ O_ O_ 
+B_ M_ L_ M_ Fg B_ P_ B_ B_ B_ 
+P_ Xg L_ Fg F_ M_ B_ F_ T_ B_ 
+Pg M_ M_ Fg Xg Fg F_ L_ F_ P_ 
+P_ B_ P_ B_ Pg F_ F_ M_ P_ B_ 
+
+11
+         money           capital hab_pesca hab_esc hab_org pob score
+vikings      4          [(3, 2)]         1       0       1   8   250
+romans       5  [(8, 4), (7, 1)]         1       0       0   9   460
+chineese     9          [(0, 3)]         0       0       1   7   160
+O_ B_ Pg Xg P_ O_ O_ O_ O_ O_ 
+O_ B_ M_ Yg B_ O_ O_ O_ O_ O_ 
+O_ B_ Fg F_ P_ O_ O_ O_ O_ O_ 
+O_ B_ X_ M_ P_ O_ O_ O_ O_ O_ 
+B_ B_ F_ M_ B_ P_ O_ O_ O_ O_ 
+B_ F_ Lg L_ L_ B_ O_ O_ O_ O_ 
+B_ M_ L_ M_ Fg B_ P_ B_ B_ B_ 
+Pg Xg L_ F_ Fg M_ B_ F_ T_ B_ 
+Pg M_ M_ Fg X_ F_ Fg L_ F_ P_ 
+P_ B_ P_ B_ P_ Fg F_ M_ P_ B_ 
+
+12
+         money           capital hab_pesca hab_esc hab_org pob score
+vikings      4          [(3, 2)]         1       0       1   8   260
+romans       4  [(8, 4), (7, 1)]         1       0       0  11   500
+chineese     3          [(0, 3)]         0       0       2   7   250
+O_ B_ P_ Xg P_ O_ O_ O_ O_ O_ 
+O_ B_ M_ Yg B_ O_ O_ O_ O_ O_ 
+O_ B_ F_ F_ Pg O_ O_ O_ O_ O_ 
+O_ B_ Xg M_ P_ O_ O_ O_ O_ O_ 
+B_ B_ Fg M_ B_ P_ O_ O_ O_ O_ 
+B_ F_ L_ L_ Lg B_ O_ O_ O_ O_ 
+B_ M_ L_ M_ F_ B_ P_ B_ B_ B_ 
+Bg Xg Lg F_ Fg M_ B_ F_ T_ B_ 
+Bg M_ M_ F_ X_ Fg F_ Lg F_ P_ 
+P_ B_ P_ B_ P_ F_ F_ M_ P_ B_ 
+
+13
+         money           capital hab_pesca hab_esc hab_org pob score
+vikings      5          [(3, 2)]         1       0       1   9   280
+romans       5  [(8, 4), (7, 1)]         1       0       0  12   520
+chineese     5          [(0, 3)]         0       0       2   7   250
+O_ B_ P_ Xg P_ O_ O_ O_ O_ O_ 
+O_ B_ M_ Yg B_ O_ O_ O_ O_ O_ 
+O_ B_ F_ F_ Pg O_ O_ O_ O_ O_ 
+O_ B_ Xg M_ P_ O_ O_ O_ O_ O_ 
+B_ B_ Yg M_ B_ P_ O_ O_ O_ O_ 
+B_ F_ L_ L_ Lg B_ O_ O_ O_ O_ 
+B_ M_ L_ M_ F_ B_ P_ B_ B_ B_ 
+Bg Xg Lg F_ F_ M_ B_ Fg T_ B_ 
+B_ M_ M_ Fg X_ Fg F_ L_ F_ P_ 
+Pg B_ P_ B_ B_ F_ F_ M_ P_ B_ 
+
+14
+         money           capital hab_pesca hab_esc hab_org pob score
+vikings      8          [(3, 2)]         1       0       1   9   280
+romans       6  [(8, 4), (7, 1)]         1       0       0  12   530
+chineese     7          [(0, 3)]         0       0       2   7   250
+O_ B_ P_ X_ Pg O_ O_ O_ O_ O_ 
+O_ B_ M_ Yg B_ O_ O_ O_ O_ O_ 
+O_ B_ Fg F_ P_ O_ O_ O_ O_ O_ 
+O_ B_ Xg M_ P_ O_ O_ O_ O_ O_ 
+B_ B_ Yg M_ B_ P_ O_ O_ O_ O_ 
+B_ F_ L_ L_ Lg B_ O_ O_ O_ O_ 
+B_ M_ L_ M_ F_ B_ P_ B_ B_ B_ 
+Bg Xg Lg Fg F_ M_ B_ F_ Tg B_ 
+B_ M_ M_ F_ Xg Fg F_ L_ F_ P_ 
+Pg B_ P_ B_ B_ F_ F_ M_ P_ B_ 
+
+15
+         money                   capital hab_pesca hab_esc hab_org pob score
+vikings      5                  [(3, 2)]         1       0       1  11   330
+romans       6  [(8, 4), (7, 1), (7, 8)]         1       0       0  16   840
+chineese     9                  [(0, 3)]         0       0       2   7   250
+O_ B_ Pg Xg P_ O_ O_ O_ O_ O_ 
+O_ B_ M_ Y_ B_ O_ O_ O_ O_ O_ 
+O_ B_ Yg Yg P_ O_ O_ O_ O_ O_ 
+O_ B_ Xg M_ P_ O_ O_ O_ O_ O_ 
+B_ B_ Y_ M_ B_ P_ O_ O_ O_ O_ 
+B_ F_ L_ Lg L_ B_ O_ O_ O_ O_ 
+B_ M_ Lg M_ Fg B_ P_ B_ B_ B_ 
+B_ Xg L_ Fg F_ M_ B_ F_ Xg B_ 
+Bg M_ M_ F_ Xg Fg Fg L_ F_ B_ 
+Pg B_ P_ B_ B_ F_ F_ M_ P_ B_ 
+
+16
+         money                   capital hab_pesca hab_esc hab_org pob score
+vikings      6                  [(3, 2)]         1       0       1  11   320
+romans       6  [(8, 4), (7, 1), (7, 8)]         1       0       0  16   860
+chineese    11                  [(0, 3)]         0       0       2   7   240
+O_ B_ P_ Xg Pg O_ O_ O_ O_ O_ 
+O_ B_ M_ Y_ B_ O_ O_ O_ O_ O_ 
+O_ B_ Y_ Y_ Pg O_ O_ O_ O_ O_ 
+O_ B_ Xg M_ P_ O_ O_ O_ O_ O_ 
+B_ B_ Y_ M_ B_ Pg O_ O_ O_ O_ 
+B_ F_ Lg L_ L_ B_ O_ O_ O_ O_ 
+B_ M_ Lg M_ Fg B_ P_ B_ B_ B_ 
+Bg X_ L_ F_ Fg M_ B_ Fg Xg B_ 
+B_ M_ M_ F_ Xg F_ F_ L_ F_ B_ 
+Pg B_ P_ B_ B_ Fg Fg M_ P_ B_ 
+
+17
+         money                   capital hab_pesca hab_esc hab_org pob score
+vikings      9                  [(3, 2)]         1       0       1  11   320
+romans       6  [(8, 4), (7, 1), (7, 8)]         1       0       0  16   880
+chineese     3                  [(0, 3)]         1       0       2   7   340
+O_ B_ Pg X_ Pg O_ O_ O_ O_ O_ 
+O_ B_ M_ Y_ B_ O_ O_ O_ O_ O_ 
+O_ B_ Y_ Y_ P_ O_ O_ O_ O_ O_ 
+O_ B_ X_ M_ Pg O_ O_ O_ O_ O_ 
+B_ B_ Yg M_ B_ Pg O_ O_ O_ O_ 
+B_ Fg L_ Lg L_ B_ O_ O_ O_ O_ 
+B_ M_ L_ M_ F_ B_ Pg B_ B_ B_ 
+B_ Xg L_ Fg F_ M_ B_ F_ X_ B_ 
+Bg M_ M_ Fg Xg Fg Fg Lg F_ B_ 
+Pg B_ P_ B_ B_ F_ Fg M_ P_ B_ 
+
+18
+         money                   capital hab_pesca hab_esc hab_org pob score
+vikings     12                  [(3, 2)]         1       0       1  11   320
+romans       6  [(8, 4), (7, 1), (7, 8)]         1       0       0  16   900
+chineese     3                  [(0, 3)]         1       0       2   8   360
+O_ Bg B_ X_ P_ O_ O_ O_ O_ O_ 
+O_ B_ M_ Yg B_ O_ O_ O_ O_ O_ 
+O_ B_ Y_ Y_ P_ O_ O_ O_ O_ O_ 
+O_ B_ X_ M_ Pg O_ O_ O_ O_ O_ 
+B_ B_ Yg M_ B_ Pg O_ O_ O_ O_ 
+B_ F_ L_ Lg L_ B_ O_ O_ O_ O_ 
+B_ M_ Lg M_ Fg B_ Pg B_ B_ B_ 
+B_ Xg L_ Fg F_ M_ B_ F_ Xg B_ 
+B_ M_ M_ Fg Xg Fg Fg L_ F_ B_ 
+Pg Bg P_ B_ B_ Fg Fg M_ P_ B_ 
+
+19
+         money                   capital hab_pesca hab_esc hab_org pob score
+vikings      4                  [(3, 2)]         1       1       1  11   410
+romans       6  [(8, 4), (7, 1), (7, 8)]         1       0       0  16   920
+chineese     4                  [(0, 3)]         1       0       2   9   380
+O_ B_ B_ Xg B_ O_ O_ O_ O_ O_ 
+O_ Bg M_ Y_ B_ O_ O_ O_ O_ O_ 
+O_ B_ Y_ Yg P_ O_ O_ O_ O_ O_ 
+O_ B_ X_ M_ P_ O_ O_ O_ O_ O_ 
+B_ B_ Yg M_ B_ Pg O_ O_ O_ O_ 
+B_ F_ L_ Lg L_ B_ O_ O_ O_ O_ 
+B_ M_ L_ M_ Fg B_ Pg B_ B_ B_ 
+B_ Xg Lg Fg Fg M_ B_ Fg Xg B_ 
+B_ M_ M_ F_ Xg Fg Fg Lg F_ B_ 
+Pg B_ Pg B_ B_ F_ Fg M_ P_ B_ 
+
+20
+         money                   capital hab_pesca hab_esc hab_org pob score
+vikings      5                  [(3, 2)]         1       1       1  11   410
+romans       6  [(8, 4), (7, 1), (7, 8)]         1       0       0  16   940
+chineese     7                  [(0, 3)]         1       0       2   9   380
+O_ B_ B_ Xg B_ O_ O_ O_ O_ O_ 
+O_ B_ M_ Y_ B_ O_ O_ O_ O_ O_ 
+O_ Bg Y_ Y_ Pg O_ O_ O_ O_ O_ 
+O_ B_ Xg M_ P_ O_ O_ O_ O_ O_ 
+B_ B_ Y_ M_ B_ P_ O_ O_ O_ O_ 
+B_ F_ Lg L_ L_ B_ O_ O_ O_ O_ 
+B_ M_ Lg M_ Fg B_ P_ B_ B_ B_ 
+B_ Xg Lg Fg Fg M_ B_ Fg Xg B_ 
+B_ M_ M_ Fg Xg Fg Fg Lg Fg B_ 
+Pg B_ Pg B_ B_ Fg F_ M_ Pg B_ 
+
+21
+         money                   capital hab_pesca hab_esc hab_org pob score
+vikings      6                  [(3, 2)]         1       1       1  11   420
+romans       6  [(8, 4), (7, 1), (7, 8)]         1       0       0  16   960
+chineese     5                  [(0, 3)]         1       0       2  11   410
+O_ B_ B_ Xg B_ O_ O_ O_ O_ O_ 
+O_ B_ M_ G_ B_ O_ O_ O_ O_ O_ 
+O_ B_ Y_ Y_ P_ O_ O_ O_ O_ O_ 
+O_ B_ Xg Mg Pg O_ O_ O_ O_ O_ 
+B_ B_ Yg M_ B_ P_ O_ O_ O_ O_ 
+B_ Fg L_ L_ Lg B_ O_ O_ O_ O_ 
+B_ M_ Lg M_ Fg B_ P_ B_ B_ B_ 
+B_ Xg Lg Fg Fg M_ B_ Fg Xg B_ 
+B_ M_ M_ F_ Xg Fg Fg Lg Fg B_ 
+Pg B_ Pg B_ B_ Fg Fg M_ Pg B_ 
+
+22
+         money                   capital hab_pesca hab_esc hab_org pob score
+vikings      7                  [(3, 2)]         1       1       1  11   430
+romans      10  [(8, 4), (7, 1), (7, 8)]         1       0       0  16   960
+chineese     8                  [(0, 3)]         1       0       2  11   410
+O_ B_ B_ Xg B_ O_ O_ O_ O_ O_ 
+O_ B_ M_ G_ B_ O_ O_ O_ O_ O_ 
+O_ B_ Yg Y_ P_ O_ O_ O_ O_ O_ 
+O_ B_ Xg M_ Pg O_ O_ O_ O_ O_ 
+B_ B_ Yg Mg B_ Pg O_ O_ O_ O_ 
+B_ Fg Lg Lg L_ B_ O_ O_ O_ O_ 
+B_ M_ L_ M_ F_ B_ P_ B_ B_ B_ 
+B_ Xg Lg Fg Fg M_ B_ Fg Xg B_ 
+B_ M_ M_ Fg Xg Fg Fg Lg Fg B_ 
+Pg B_ P_ B_ B_ Fg Fg M_ Pg B_ 
+
+23
+         money                   capital hab_pesca hab_esc hab_org pob score
+vikings      8                  [(3, 2)]         1       1       1  11   430
+romans      12  [(8, 4), (7, 1), (7, 8)]         1       0       0  16   970
+chineese    11                  [(0, 3)]         1       0       2  11   410
+O_ B_ B_ Xg B_ O_ O_ O_ O_ O_ 
+O_ B_ M_ G_ B_ O_ O_ O_ O_ O_ 
+O_ B_ Y_ Yg P_ O_ O_ O_ O_ O_ 
+O_ B_ Xg Mg P_ O_ O_ O_ O_ O_ 
+B_ B_ Yg M_ B_ Pg O_ O_ O_ O_ 
+B_ F_ Lg Lg Lg B_ O_ O_ O_ O_ 
+B_ M_ Lg M_ Fg B_ P_ B_ B_ B_ 
+B_ Xg L_ Fg Fg M_ B_ Fg Xg B_ 
+B_ M_ M_ Fg Xg Fg Fg Lg Fg B_ 
+Pg B_ Pg B_ B_ Fg Fg M_ Pg B_ 
+
+24
+         money                   capital hab_pesca hab_esc hab_org pob score
+vikings      9                  [(3, 2)]         1       1       1  11   440
+romans      14  [(8, 4), (7, 1), (7, 8)]         1       0       0  16   980
+chineese    14                  [(0, 3)]         1       0       2  11   410
+O_ B_ B_ Xg B_ O_ O_ O_ O_ O_ 
+O_ B_ Mg G_ B_ O_ O_ O_ O_ O_ 
+O_ B_ Yg Y_ P_ O_ O_ O_ O_ O_ 
+O_ B_ Xg M_ P_ O_ O_ O_ O_ O_ 
+B_ B_ Y_ Mg B_ Pg O_ O_ O_ O_ 
+B_ Fg Lg Lg Lg B_ O_ O_ O_ O_ 
+B_ M_ Lg M_ Fg B_ Pg B_ B_ B_ 
+B_ Xg Lg Fg Fg M_ B_ Fg Xg B_ 
+B_ M_ M_ Fg Xg Fg Fg Lg F_ B_ 
+Pg B_ Pg B_ B_ Fg Fg M_ Pg B_ 
+
+25
+         money                   capital hab_pesca hab_esc hab_org pob score
+vikings     12                  [(3, 2)]         1       1       1  11   440
+romans       5  [(8, 4), (7, 1), (7, 8)]         1       0       1  16  1080
+chineese     4                  [(0, 3)]         1       0       3  11   510
+O_ B_ B_ X_ B_ O_ O_ O_ O_ O_ 
+O_ B_ Mg Gg B_ O_ O_ O_ O_ O_ 
+O_ B_ Yg Yg P_ O_ O_ O_ O_ O_ 
+O_ B_ X_ M_ P_ O_ O_ O_ O_ O_ 
+B_ B_ Y_ Mg B_ Pg O_ O_ O_ O_ 
+B_ Fg Lg Lg Lg B_ O_ O_ O_ O_ 
+B_ M_ Lg M_ Fg B_ Pg B_ B_ B_ 
+B_ Xg Lg Fg Fg M_ B_ Fg Xg B_ 
+B_ M_ M_ Fg Xg Fg Fg Lg F_ B_ 
+Pg B_ Pg B_ B_ Fg Fg M_ Pg B_ 
+
+26
+         money                   capital hab_pesca hab_esc hab_org pob score
+vikings     13                  [(3, 2)]         1       1       1  11   440
+romans       6  [(8, 4), (7, 1), (7, 8)]         1       0       1  18  1120
+chineese     7                  [(0, 3)]         1       0       3  11   510
+O_ B_ B_ Xg B_ O_ O_ O_ O_ O_ 
+O_ B_ Mg Gg B_ O_ O_ O_ O_ O_ 
+O_ B_ Y_ Yg Pg O_ O_ O_ O_ O_ 
+O_ B_ Xg M_ P_ O_ O_ O_ O_ O_ 
+B_ B_ Yg M_ B_ Pg O_ O_ O_ O_ 
+B_ Fg Lg Lg L_ B_ O_ O_ O_ O_ 
+B_ M_ Lg M_ Fg B_ Pg B_ B_ B_ 
+B_ Xg Lg Yg Fg M_ B_ Fg Xg B_ 
+B_ M_ M_ Fg X_ Yg Fg Lg Fg B_ 
+Pg B_ Pg B_ B_ Fg F_ M_ Pg B_ 
+
+27
+         money                   capital hab_pesca hab_esc hab_org pob score
+vikings     17          [(0, 3), (3, 2)]         1       1       1  22   950
+romans       7  [(8, 4), (7, 1), (7, 8)]         1       0       1  20  1160
+chineese     7                        []         1       0       3   0    10
+O_ B_ B_ Xg B_ O_ O_ O_ O_ O_ 
+O_ B_ M_ G_ B_ O_ O_ O_ O_ O_ 
+O_ B_ Yg Yg Pg O_ O_ O_ O_ O_ 
+O_ B_ Xg Mg P_ O_ O_ O_ O_ O_ 
+B_ B_ Y_ Mg B_ Pg O_ O_ O_ O_ 
+B_ Fg Lg Lg L_ B_ O_ O_ O_ O_ 
+B_ M_ Lg M_ Fg B_ Pg B_ B_ B_ 
+B_ Xg Lg Yg Fg M_ B_ Fg Xg B_ 
+B_ M_ M_ Yg Xg Y_ Fg Lg Yg B_ 
+Pg B_ Pg B_ B_ Fg Fg M_ Pg B_ 
+
+28
+         money                   capital hab_pesca hab_esc hab_org pob score
+vikings      7          [(0, 3), (3, 2)]         1       1       2  22  1060
+romans       8  [(8, 4), (7, 1), (7, 8)]         1       0       1  23  1220
+chineese     7                        []         1       0       3   0     0
+O_ B_ B_ Xg B_ O_ O_ O_ O_ O_ 
+O_ B_ M_ Gg B_ O_ O_ O_ O_ O_ 
+O_ B_ Yg Y_ Pg O_ O_ O_ O_ O_ 
+O_ B_ Xg M_ Pg O_ O_ O_ O_ O_ 
+B_ B_ Yg M_ B_ P_ O_ O_ O_ O_ 
+B_ Fg Lg Lg Lg B_ O_ O_ O_ O_ 
+B_ M_ Lg M_ Fg B_ Pg B_ B_ B_ 
+B_ Xg Lg Yg Yg M_ B_ Yg Xg B_ 
+B_ M_ M_ Yg Xg Yg Fg Lg Yg B_ 
+Pg B_ Pg B_ B_ Yg F_ M_ Pg B_ 
+
+29
+         money                   capital hab_pesca hab_esc hab_org pob score
+vikings      9          [(0, 3), (3, 2)]         1       1       2  24  1090
+romans      15  [(8, 4), (7, 1), (7, 8)]         1       0       1  23  1200
+chineese     7                        []         1       0       3   0     0
+O_ B_ B_ Xg B_ O_ O_ O_ O_ O_ 
+O_ B_ Mg Gg B_ O_ O_ O_ O_ O_ 
+O_ B_ Y_ Y_ P_ O_ O_ O_ O_ O_ 
+O_ B_ Xg M_ P_ O_ O_ O_ O_ O_ 
+B_ B_ Gg M_ B_ Pg O_ O_ O_ O_ 
+B_ Fg L_ Lg L_ B_ O_ O_ O_ O_ 
+B_ M_ Lg M_ Fg B_ Pg B_ B_ B_ 
+B_ Xg Lg Yg Yg M_ B_ Yg Xg B_ 
+B_ M_ M_ Yg Xg Yg Fg Lg Yg B_ 
+Pg B_ Pg B_ B_ Yg F_ M_ Pg B_ 
+
+30
+         money                   capital hab_pesca hab_esc hab_org pob score
+vikings     12          [(0, 3), (3, 2)]         1       1       2  26  1130
+romans       8  [(8, 4), (7, 1), (7, 8)]         1       0       2  23  1290
+chineese     7                        []         1       0       3   0     0
+O_ B_ B_ Xg B_ O_ O_ O_ O_ O_ 
+O_ B_ M_ Gg B_ O_ O_ O_ O_ O_ 
+O_ B_ Y_ Gg P_ O_ O_ O_ O_ O_ 
+O_ B_ X_ M_ P_ O_ O_ O_ O_ O_ 
+B_ B_ Gg M_ B_ Pg O_ O_ O_ O_ 
+B_ F_ Lg Lg L_ B_ O_ O_ O_ O_ 
+B_ M_ Lg M_ Fg B_ Pg B_ B_ B_ 
+B_ Xg Lg Y_ Yg M_ B_ Yg Xg B_ 
+B_ M_ M_ Yg Xg Yg Fg Lg Yg B_ 
+Pg B_ Pg B_ B_ Yg Fg M_ Pg B_ 
+
+         money                   capital hab_pesca hab_esc hab_org pob score
+vikings     12          [(0, 3), (3, 2)]         1       1       2  26  1130
+romans       8  [(8, 4), (7, 1), (7, 8)]         1       0       2  23  1290
+chineese     7                        []         1       0       3   0     0
+O_ B_ B_ Xg B_ O_ O_ O_ O_ O_ 
+O_ B_ M_ Gg B_ O_ O_ O_ O_ O_ 
+O_ B_ Y_ Gg P_ O_ O_ O_ O_ O_ 
+O_ B_ X_ M_ P_ O_ O_ O_ O_ O_ 
+B_ B_ Gg M_ B_ Pg O_ O_ O_ O_ 
+B_ F_ Lg Lg L_ B_ O_ O_ O_ O_ 
+B_ M_ Lg M_ Fg B_ Pg B_ B_ B_ 
+B_ Xg Lg Y_ Yg M_ B_ Yg Xg B_ 
+B_ M_ M_ Yg Xg Yg Fg Lg Yg B_ 
+Pg B_ Pg B_ B_ Yg Fg M_ Pg B_ 
+
