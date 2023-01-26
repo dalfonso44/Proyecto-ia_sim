@@ -1,5 +1,5 @@
 import numpy as np
-from world_ import *
+from world.world_ import *
 
 
 

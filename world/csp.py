@@ -3,7 +3,7 @@ from itertools import count
 from operator import eq, neg
 from sortedcontainers import SortedSet
 import random
-import search
+from world.search import Problem
 
 
 def count(seq):
@@ -14,7 +14,7 @@ def first(iterable, default=None):
     """Return the first element of an iterable; or default."""
     return next(iter(iterable), default)
 
-class CSP(search.Problem):
+class CSP(Problem):
     """This class describes a finite-domain Constraint Satisfaction Problem
     A CSP is specified by the following inputs:
         - variables : A list of variables; each is atomic

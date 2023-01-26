@@ -91,6 +91,15 @@ Los juegos ganados por jugadores fueron:
 
 Podemos concluir que el mejor jugador es el que implementa un Monte Carlo Tree Search. Sin embargo el jugador de Monte Carlo Simple también obtiene resultados muy buenos.
 
+Mientras más historias pueda comprobar, o sea, mientras mayor sea el
+árbol de búsqueda del MCTS, mejores resultados se obtienen pero aumenta
+considerablemente el tiempo de duración de la simulación.
+
+Se realizó un primer estudio con 70 simulaciones en las cuales los valores
+medios eran semejantes y la cantidad de partidos ganados y perdidos por
+jugador eran proporcionales. Por tanto consideramos que ya no es necesario
+realizar más simulaciones debido a que tiende a los mismos resultados.
+
 
 
 

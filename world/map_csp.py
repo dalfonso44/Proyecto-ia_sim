@@ -1,10 +1,10 @@
 import numpy as np
 
-from world_ import *
+from world.world_ import *
 from collections import defaultdict
 import random
-from clases import *
-from csp import *
+from world.clases import *
+from world.csp import *
 
 
 
@@ -189,12 +189,12 @@ class map(CSP):
 
 
 
-# probando el mapa
+# # probando el mapa
 
-mapa = map(10,10,['viking', 'indians', 'mexicans'])
+# mapa = map(10,10,['viking', 'indians', 'mexicans'])
 
 
 
-print(mapa)
+# print(mapa)
 
 

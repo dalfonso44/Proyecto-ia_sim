@@ -1,5 +1,6 @@
 from mimetypes import init
 from world.clases import *
+from world.map_csp import map as mapa
 from Players.Player import *
 import pandas as pd
 import csv
@@ -13,6 +14,7 @@ class Civilization():
     #players es una lista de jugadores
     def __init__(self, players) -> None:
         self.map = map(10,10,0.6)
+        #self.map = mapa(10,10,['a','c','d'])
         self.game_over = False
         self.players = players
         self.turn = 0
